@@ -1,8 +1,8 @@
-import styles from '../styles/components/MainPage.module.css';
 import { RiArrowDownCircleLine } from 'react-icons/ri';
-import Airplane from '../../public/icons/airplane.svg'
-import ArrowDown from '../../public/icons/arrowDown.svg'
 import { Link as ScrollLink } from 'react-scroll';
+import Airplane from '../../public/icons/airplane.svg';
+import ArrowDown from '../../public/icons/arrowDown.svg';
+import styles from '../styles/components/MainPage.module.css';
 
 export function MainPage() {
   return (
@@ -11,12 +11,12 @@ export function MainPage() {
         <div className={styles.maincontent}>
           <p>👋 Hey, Welcome </p>
           <div className={styles.maintitle}>
-
-            The <strong>Next Generation</strong>  of Utilities for Flight Simmers
+            The <strong>Next Generation</strong> of Utilities for Flight Simmers
           </div>
 
-          <p>A multi language advanced Discord bot
-            Made by <strong>Flight Simmers</strong> for <strong>Flight Simmers</strong>
+          <p>
+            A multi language advanced Discord bot Made by{' '}
+            <strong>Flight Simmers</strong> for <strong>Flight Simmers</strong>
           </p>
 
           <button className={styles.invitebutton}>
@@ -27,7 +27,6 @@ export function MainPage() {
               </a>
             </p>
           </button>
-
         </div>
         <div className={styles.airplane}>
           <Airplane />
@@ -40,5 +39,5 @@ export function MainPage() {
         </button>
       </ScrollLink>
     </div>
-  )
+  );
 }
