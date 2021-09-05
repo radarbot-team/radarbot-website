@@ -43,7 +43,7 @@
   width: 18.81rem;
   height: 4rem;
   border: none;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -123,15 +123,17 @@
     padding: 1rem;
   }
 
-  .maincontent > p:first-child{
+  /* .maincontent > p:first-child{
     display: none;
-  }
+  } */
 
   .airplane {
     display: none;
   }
 
   .arrowdown {
+    display: none;
+    /* Remover quando o bug da seta no modal estiver corrigido */
     margin-left: -0.8rem;
   }
   .maintitle {

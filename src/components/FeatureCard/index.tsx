@@ -40,7 +40,7 @@ export function FeatureCard(props: {
       <div className={styles.features}>
         {props.features.map((feature, index) => (
           <div key={index} className={styles.feature}>
-            <Arrow className={styles.arrow} />{feature}
+            <Arrow className={styles.arrow} style={{ color: props.color }} />{feature}
           </div>
         ))}
       </div>

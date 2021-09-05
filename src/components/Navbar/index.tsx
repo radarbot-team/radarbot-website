@@ -10,9 +10,49 @@ import { useEffect, useState } from 'react';
 export function Navbar() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+
   return (
     <div className={styles.container}>
       <RadarLogo />
+      {
+        modalIsOpen ? (
+          <nav className={styles.mobilenavbar}>
+            <ScrollLink activeClass={styles.mobilenavbaractive} 
+            onClick={() => setModalIsOpen((prev) => !prev)} 
+            to="main" 
+            offset={-150} 
+            spy={true} 
+            smooth={true}>
+              Home
+            </ScrollLink>
+
+            <ScrollLink 
+            activeClass={styles.mobilenavbaractive}
+            onClick={() => setModalIsOpen((prev) => !prev)}  
+            offset={-150} 
+            spy={true} 
+            to="features" 
+            smooth={true}>
+              Features
+            </ScrollLink>
+
+            <ScrollLink to="analytics">
+              Analytics
+            </ScrollLink>
+
+            <Link href="https://docs.radarbot.xyz" passHref={true}>
+              <button>Docs</button>
+            </Link>
+
+            <ScrollLink to="home">
+              Testimonials
+            </ScrollLink>
+
+            <ScrollLink to="home">
+              Contact
+            </ScrollLink>
+          </nav>
+        ) : (
       <nav className={styles.navbar}>
         <ScrollLink activeClass={styles.navbaractive} to="main" offset={-150} spy={true} smooth={true}>
           Home
@@ -38,21 +78,24 @@ export function Navbar() {
           Contact
         </ScrollLink>
       </nav>
-      <button disabled={true} className={styles.loginbutton}>
+      )
+      }
+
+      <button onClick={() => alert("Soon...")} className={styles.loginbutton}>
         Login
       </button>
       {
         modalIsOpen ? (
-          <IoClose 
-          className={styles.close} 
-          onClick={() => setModalIsOpen((prev) => !prev)} 
-          size="2rem"
+          <IoClose
+            className={styles.close}
+            onClick={() => setModalIsOpen((prev) => !prev)}
+            size="2rem"
           />
         ) : (
-          <HiOutlineMenuAlt1 
-          className={styles.mobilebutton} 
-          onClick={() => setModalIsOpen((prev) => !prev)} 
-          size="2rem" />
+          <HiOutlineMenuAlt1
+            className={styles.mobilebutton}
+            onClick={() => setModalIsOpen((prev) => !prev)}
+            size="2rem" />
 
         )
       }

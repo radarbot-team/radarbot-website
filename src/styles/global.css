@@ -16,6 +16,7 @@ body {
   --main-font-color: #fff;
   --feature-card-green: #33cc4c;
   --main-blue-hover: #10afba;
+  --main-grey: #8e8e8e;
 }
 
 @media (max-width: 1080px) {
