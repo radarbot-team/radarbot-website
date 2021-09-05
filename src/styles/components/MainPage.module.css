@@ -79,3 +79,32 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .airplane {
+    display: none;
+  }
+  .maincontent > p {
+    display: none;
+  }
+
+  .maintitle {
+    font-size: 3.4rem;
+  }
+
+  .arrowdown {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .maincontent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }  
+}

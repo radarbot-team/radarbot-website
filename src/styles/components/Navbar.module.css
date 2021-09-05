@@ -42,3 +42,17 @@
   border-radius: 0.625rem;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .loginbutton {
+    display: none;
+  }
+}
