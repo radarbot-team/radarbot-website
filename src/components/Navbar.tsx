@@ -1,8 +1,7 @@
-import styles from '../styles/components/Navbar.module.css'
 import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll'
-import RadarLogo from '../../public/icons/radarlogo.svg'
-import { Features } from './Features'
+import { Link as ScrollLink } from 'react-scroll';
+import RadarLogo from '../../public/icons/radarlogo.svg';
+import styles from '../styles/components/Navbar.module.css';
 
 export function Navbar() {
   return (
