@@ -1,8 +1,8 @@
 import { RiArrowDownCircleLine } from 'react-icons/ri';
 import { Link as ScrollLink } from 'react-scroll';
-import Airplane from '../../public/icons/airplane.svg';
-import ArrowDown from '../../public/icons/arrowDown.svg';
-import styles from '../styles/components/MainPage.module.css';
+import Airplane from '../../../public/icons/airplane.svg';
+import ArrowDown from '../../../public/icons/arrowDown.svg';
+import styles from './MainPage.module.css';
 
 export function MainPage() {
   return (
@@ -33,7 +33,7 @@ export function MainPage() {
         </div>
       </div>
 
-      <ScrollLink spy={true} to="features" smooth={true}>
+      <ScrollLink spy={true} offset={-150} to="features" smooth={true}>
         <button className={styles.arrowdown}>
           <ArrowDown />
         </button>

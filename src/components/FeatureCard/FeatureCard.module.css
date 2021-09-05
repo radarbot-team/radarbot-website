@@ -37,3 +37,14 @@
 .arrow {
   margin-right: 0.2rem;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

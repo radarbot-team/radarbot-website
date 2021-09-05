@@ -1,5 +1,5 @@
-import styles from '../styles/components/Features.module.css'
-import { FeatureCard } from './FeatureCard'
+import styles from './Features.module.css'
+import { FeatureCard } from '../FeatureCard'
 
 export function Features() {
   return (

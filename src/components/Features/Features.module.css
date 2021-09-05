@@ -36,9 +36,37 @@
   overflow-x: auto;
 }
 
+@media screen and (max-width: 1300px) {
+
+
+  .header {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 3.4rem;
+  }
+
+  .description {
+    border: none;
+  }
+
+  .description > p {
+    margin-top: 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
   .header {
     flex-direction: column;
+  }
+
+  .title {
+    font-size: 2.5rem;
   }
 
   .description > p {
@@ -46,7 +74,12 @@
   }
 
   .features {
-    justify-content: flex-start;    
-    overflow-x: auto;
+    padding: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    justify-content: flex-start;
   }
 }

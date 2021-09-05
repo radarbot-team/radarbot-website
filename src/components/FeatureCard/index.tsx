@@ -1,6 +1,6 @@
-import styles from '../styles/components/FeatureCard.module.css'
+import styles from './FeatureCard.module.css'
 import { IoLanguageOutline, IoImageOutline, IoCompassOutline } from 'react-icons/io5';
-import Arrow from '../../public/icons/arrow.svg';
+import Arrow from '../../../public/icons/arrow.svg';
 
 
 export function FeatureCard(props: {

@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.mobilebutton {
+  display: none;
+}
+
 .navbar {
   font-size: 1rem;
   width: 30vw;
@@ -56,11 +60,24 @@
 }
 
 @media (max-width: 768px) {
+  .mobilebutton {
+    color: var(--main-blue);
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close {
+    color: var(--main-blue);
+  }
+
   .navbar {
     display: none;
   }
 
   .container {
+    padding: 1rem;
     width: 100%;
   }
 
