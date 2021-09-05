@@ -1,0 +1,81 @@
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maincontent {
+  color: var(--main-font-color);
+  height: 55vh;
+  padding: 6rem 0 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.maintitle {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.maincontent strong {
+  color: var(--main-blue)
+}
+
+.invitebutton {
+  background-color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFF;
+  width: 18.81rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.invitebutton:hover {
+  background-color: var(--main-blue-hover);
+}
+
+.invitebutton > p {
+  margin-left: 0.25rem;
+}
+
+.invitebutton > p > a {
+  color: var(--main-font-color);
+  text-decoration: none;
+}
+
+.airplane {
+  /* stroke-dashoffset: 300; */
+  animation: airplane-animation 1s ease-in-out forwards;
+}
+
+@keyframes airplane-animation{
+  from {margin-right: 0} 
+  to{margin-right: -5rem;} 
+}
+
+.arrowdown {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}

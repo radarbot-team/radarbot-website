@@ -1,0 +1,39 @@
+.container {
+  width: 320px;
+  height: 353px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.6rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.features {
+  font-family: 'Rajdhani';
+  font-size: 0.8125rem;
+}
+
+.footer {
+  font-weight: lighter;
+}
+
+.arrow {
+  margin-right: 0.2rem;
+}
