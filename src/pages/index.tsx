@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Analytics } from '../components/Analytics'
 import { Features } from '../components/Features'
 import { MainPage } from '../components/MainPage'
 import { Navbar } from '../components/Navbar'
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <MainPage />
       <Features />
+      <Analytics />
     </div>
   )
 }

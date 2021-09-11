@@ -2,7 +2,6 @@
   color: var(--main-font-color);
   padding: 0 5rem;
   margin-top: 3rem;
-  margin-bottom: 50rem;
   display: flex;
   flex-direction: column;
 }

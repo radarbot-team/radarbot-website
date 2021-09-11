@@ -33,7 +33,7 @@ export function Features() {
           color="#DC52E5"
           icon="flightutilities"
           title="Flight Utilities"
-          description="Radar Bot is constantly updated and currently supports 3 languages"
+          description="The best tools for virtual flights!"
           features={[
             "Matear & TAF",
             "Charts",
@@ -46,7 +46,7 @@ export function Features() {
           color="#F09242"
           icon="screenshots"
           title="Screenshot System"
-          description="Radar Bot is constantly updated and currently supports 3 languages"
+          description="Members can post screenshots on channel and others can vote on it. Best screenshots go to top-screenshots channel"
           features={[
             "Vote on Screenshots",
             "Top screenshots channel",

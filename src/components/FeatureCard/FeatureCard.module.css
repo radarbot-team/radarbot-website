@@ -1,4 +1,6 @@
 .container {
+  z-index: -1;
+  position: relative;
   width: 320px;
   height: 353px;
   border-radius: 5px;
@@ -6,6 +8,19 @@
   flex-direction: column;
   margin: 1rem;
   padding: 1rem 1rem;
+  justify-content: space-between;
+}
+
+.innercontainer {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 3px;
+  background: var(--background);
+  display: flex;
+  padding: 1rem 1rem;
+  flex-direction: column;
   justify-content: space-between;
 }
 

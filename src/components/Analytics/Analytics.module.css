@@ -1,0 +1,35 @@
+.container {
+  color: var(--main-font-color);
+  padding: 0 5rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: right;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 3.125rem;
+  max-width: 40rem;
+}
+
+.title > span {
+  color: var(--main-blue)
+}
+
+.subtitle {
+  border-top: 2px solid var(--main-blue);
+  max-width: 15.8125rem;
+}
+
+.subtitle > p {
+  margin-top: 0.5rem;
+}

@@ -67,17 +67,14 @@
 }
 
 @keyframes airplane-animation {
-  from {
-    margin-right: 0;
-  }
-  to {
-    margin-right: -5rem;
-  }
+  0% {transform: translateX(-100px);} 
+  100% {transform: translateX(0);} 
 }
 
 .arrowdown {
   cursor: pointer;
   border: none;
+  z-index: 1;
   background-color: transparent;
   position: absolute;
   bottom: 1.2rem;
