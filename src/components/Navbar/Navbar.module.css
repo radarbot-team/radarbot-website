@@ -2,6 +2,7 @@
   position: fixed;
   height: 4rem;
   width: 100vw;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,12 +90,9 @@
     display: none;
   }
 
-  .mobilenavbar {
-    z-index: 1;
-    overflow-y: hidden;
-  }
 
   .mobilenavbar {
+    z-index: 1;
     color: var(--main-grey);
     position: fixed;
     top: 4rem;
@@ -117,6 +115,7 @@
   }
 
   .mobilenavbar > *.mobilenavbaractive {
+    z-index: 1;
     color: #fff;
     border-bottom: 3px solid var(--main-blue);
     box-sizing: border-box;

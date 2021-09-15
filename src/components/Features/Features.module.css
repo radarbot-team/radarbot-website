@@ -6,6 +6,11 @@
   flex-direction: column;
 }
 
+.fadecontainer {
+  display: flex;
+  z-index: -1;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

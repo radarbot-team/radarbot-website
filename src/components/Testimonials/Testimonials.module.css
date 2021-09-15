@@ -1,0 +1,35 @@
+.container {
+  color: var(--main-font-color);
+  padding: 0 5rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3.125rem;
+  max-width: 40rem;
+  box-sizing: border-box;
+}
+
+.description {
+  border-top: 2px solid var(--main-blue);
+  max-width: 15.8125rem;
+}
+
+.description > p {
+  margin-top: 0.5rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+}

@@ -74,7 +74,7 @@
 .arrowdown {
   cursor: pointer;
   border: none;
-  z-index: 1;
+  /* z-index: 0; */
   background-color: transparent;
   position: absolute;
   bottom: 1.2rem;
@@ -88,14 +88,19 @@
 }
 
 @media screen and (max-width: 1300px) {
-
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
   .maincontent {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    /* align-items: center; */
     /* editar abaixo para diminuir o padding horizontal em mobile */
-    /* padding: 3rem; */
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
   }
 
 
@@ -116,8 +121,10 @@
     display: flex;
     align-items: center;
     width: 100%;
+    height: 80vh;
     /* editar abaixo para diminuir o padding horizontal em mobile */
     padding: 1rem;
+
   }
 
   /* .maincontent > p:first-child{
@@ -135,6 +142,11 @@
   }
   .maintitle {
     font-size: 3.4rem;
+  }
+
+  .invitebutton {
+    font-size: 1.2rem;
+    margin-top: 2rem;
   }
 
 }

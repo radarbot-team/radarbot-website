@@ -2,7 +2,8 @@ import hexRgb from 'hex-rgb';
 import { useEffect, useState } from 'react';
 import { IoCompassOutline, IoImageOutline, IoLanguageOutline } from 'react-icons/io5';
 import { ArrowSvgComponent } from '../Icons/Arrow';
-import styles from './FeatureCard.module.css';
+import { Quotes } from '../Icons/Quotes';
+import styles from './TestimonialCard.module.css';
 
 interface IColor {
   red: number;
@@ -11,13 +12,14 @@ interface IColor {
   alpha: number;
 }
 
-export function FeatureCard(props: {
+export function TestimonialCard(props: {
   color: string,
   icon: string,
   title: string,
   description: string,
-  features: string[],
-  footer: string
+  image?: string,
+  name: string,
+  position: string,
 }) {
   const [rgbColor, setRgbColor] = useState<IColor>({ red: 0, green: 0, blue: 0, alpha: 0 });
   const [arrowColor, setArrowColor] = useState<string>('#FFF');
@@ -28,16 +30,6 @@ export function FeatureCard(props: {
 
 
   }, [props.color])
-  function getIcon() {
-    switch (props.icon) {
-      case 'language':
-        return <IoLanguageOutline className={styles.icon} style={{ backgroundColor: props.color }} />
-      case 'screenshots':
-        return <IoImageOutline className={styles.icon} style={{ backgroundColor: props.color }} />
-      case 'flightutilities':
-        return <IoCompassOutline className={styles.icon} style={{ backgroundColor: props.color }} />
-    }
-  }
 
   return (
     <div className={styles.container} style={
@@ -46,7 +38,7 @@ export function FeatureCard(props: {
       }}>
       <div className={styles.innercontainer}>
         <div>
-          {getIcon()}
+          <Quotes style={{ color: "#E08537"}} />
         </div>
 
         <div className={styles.title}>
@@ -57,17 +49,7 @@ export function FeatureCard(props: {
           {props.description}
         </div>
 
-        <div className={styles.features}>
-          {props.features.map((feature, index) => (
-            <div key={feature} className={styles.feature}>
-              <ArrowSvgComponent className={styles.arrow}/>{feature}
-            </div>
-          ))}
-        </div>
 
-        <div className={styles.footer}>
-          {props.footer}
-        </div>
       </div>
     </div>
   )

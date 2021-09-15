@@ -62,7 +62,7 @@ export function Navbar() {
           Features
         </ScrollLink>
 
-        <ScrollLink to="analytics">
+        <ScrollLink to="analytics" activeClass={styles.navbaractive} offset={-120} spy={true} smooth={true}>
           Analytics
         </ScrollLink>
 

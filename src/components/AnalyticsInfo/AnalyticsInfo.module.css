@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  height: 5rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  
+}
+
+.innercontainer {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 3px;
+  background: var(--background);
+  display: flex;
+  padding: 1rem 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+
+  
+}
