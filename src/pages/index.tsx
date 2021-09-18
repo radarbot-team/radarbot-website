@@ -16,7 +16,10 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    setIsLoading(false);
+    setTimeout(() => {
+        
+      setIsLoading(false);
+    }, 2000)
   }, [])
 
   if (isLoading) {
