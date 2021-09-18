@@ -7,7 +7,7 @@ import { Fade, Bounce } from 'react-awesome-reveal';
 export function Support() {
   return (
     <Fade duration={3000} triggerOnce={true} className={styles.container}>
-      <div className={styles.items}>
+      <div id="support" className={styles.items}>
         <BackgroundSupport className={styles.background} />
         <LogoRadarBot />
         <h2>Questions or need help?</h2>

@@ -12,9 +12,9 @@
 .innercontainer {
   z-index: 1;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 3px;
   background: var(--background);
   display: flex;
@@ -33,9 +33,4 @@
   margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 400;
-}
-
-@media (max-width: 768px) {
-
-  
 }

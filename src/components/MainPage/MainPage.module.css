@@ -117,6 +117,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .maincontent {
     display: flex;
     align-items: center;

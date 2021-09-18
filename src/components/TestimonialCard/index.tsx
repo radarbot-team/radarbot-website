@@ -1,10 +1,11 @@
 import hexRgb from 'hex-rgb';
+import Image from 'next/dist/client/image';
 import { useEffect, useState } from 'react';
-import { IoCompassOutline, IoImageOutline, IoLanguageOutline } from 'react-icons/io5';
-import { ArrowSvgComponent } from '../Icons/Arrow';
+import ReactMarkdown from 'react-markdown';
+import PernaDoVentoLogo from '../../../public/images/pernaDoVentoLogo.png';
 import { Quotes } from '../Icons/Quotes';
 import styles from './TestimonialCard.module.css';
-
+import Link from 'next/link';
 interface IColor {
   red: number;
   green: number;
@@ -14,7 +15,6 @@ interface IColor {
 
 export function TestimonialCard(props: {
   color: string,
-  icon: string,
   title: string,
   description: string,
   image?: string,
@@ -38,16 +38,38 @@ export function TestimonialCard(props: {
       }}>
       <div className={styles.innercontainer}>
         <div>
-          <Quotes style={{ color: "#E08537"}} />
+          <Quotes style={{ color: "#E08537" }} />
         </div>
 
         <div className={styles.title}>
-          {props.title}
+          <ReactMarkdown>
+            {props.title}
+          </ReactMarkdown>
         </div>
 
         <div className={styles.description}>
           {props.description}
         </div>
+
+        <footer>
+          <div className={styles.footer}>
+            <Link href="https://youtube.com/pernadovento" passHref={true}>
+              <Image className={styles.footerImage} width="48px" height="47px" src={PernaDoVentoLogo} alt="pernadoventologo" />
+            </Link>
+            <div className={styles.footerText}>
+
+              <div className={styles.name} style={{
+                color: "#E08537"
+              }}>
+                <span>Flávio Oliveira</span>
+              </div>
+              <div className={styles.footerDescription}>
+                Fundador Canal Perna do Vento
+              </div>
+
+            </div>
+          </div>
+        </footer>
 
 
       </div>

@@ -10,6 +10,7 @@ import styles from '../styles/pages/Home.module.css'
 import { useEffect, useState } from 'react'
 import { Loading } from '../components/Loading'
 import { Testimonials } from '../components/Testimonials'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -33,8 +34,9 @@ export default function Home() {
       <MainPage />
       <Features />
       <Analytics />
-      <Support />
       <Testimonials />
+      <Support />
+      <Footer />
     </div>
   )
 }

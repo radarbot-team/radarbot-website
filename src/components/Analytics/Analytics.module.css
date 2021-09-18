@@ -1,5 +1,4 @@
 .container {
-  z-index: -1;
   color: var(--main-font-color);
   padding: 0 5rem;
   margin-top: 3rem;
@@ -44,8 +43,9 @@
 }
 
 @media screen and (max-width: 1300px) {
+
   .container {
-    /* background-color: aliceblue; */
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

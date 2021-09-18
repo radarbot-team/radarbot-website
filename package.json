@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "hex-rgb": "^5.0.0",
     "intersection-observer": "^0.12.0",
@@ -19,6 +22,7 @@
     "react-hook-inview": "^4.3.11",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.1",
+    "react-markdown": "^7.0.1",
     "react-scroll": "^1.8.4",
     "styled-components": "^5.3.1"
   },

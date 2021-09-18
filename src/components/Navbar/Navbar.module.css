@@ -10,6 +10,7 @@
   padding: 0 3rem;
   /* background-color: var(--background); */
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .mobilebutton {

@@ -1,5 +1,4 @@
 .container {
-  z-index: -1;
   position: relative;
   width: 320px;
   height: 353px;
@@ -33,13 +32,17 @@
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1.4rem;
 }
 
+.title > span {
+  font-weight: 600;
+}
+
 .description {
-  font-weight: normal;
-  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .features {
@@ -56,13 +59,45 @@
   color: var(--main-font-color)
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerImage {
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.footerImage:hover {
+  opacity: 0.8;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footerDescription {
+  font-size: 1rem;
+  max-width: 10rem;
+}
+
 @media (max-width: 768px) {
   .container {
-    width: 80%;
-    height: 250px;
+    width: 25rem;
+    height: 20rem;
   }
 
   .title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }

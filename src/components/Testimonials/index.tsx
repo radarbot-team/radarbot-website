@@ -5,7 +5,7 @@ import { TestimonialCard } from '../TestimonialCard';
 export function Testimonials() {
 
   return (
-    <div className={styles.container}>
+    <div id="testimonials" className={styles.container}>
       <div className={styles.header}>
         <div className={styles.title}>
           <p>
@@ -21,11 +21,10 @@ export function Testimonials() {
       <div className={styles.testimonials}>
         <TestimonialCard
           color="#E08537"
-          icon="language"
-          title="Usar o RadarBot no meu servidor foi a escolha certa."
-          description="Todas as ferramentas usadas para a simulação de voo estão disponíveis nele, além de features incríveis como os votos nas capturas de tela do simulador que ajuda a integrar mais a comunidade do servidor."
+          title="Using **RadarBot** on my server was the right choice."
+          description="All the tools used for the flight simulation are available in it, as well as amazing features like votes in the simulator screenshots that help to integrate more with the server community."
           name="Flávio Oliveira"
-          position="Fundador Canal Perna do Vento"
+          position="Perna do Vento channel Founder"
           image="Sample.jpg"
         />
       </div>
