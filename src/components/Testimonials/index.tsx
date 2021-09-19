@@ -22,7 +22,7 @@ export function Testimonials() {
         <TestimonialCard
           color="#E08537"
           title="Using **RadarBot** on my server was the right choice."
-          description="All the tools used for the flight simulation are available in it, as well as amazing features like votes in the simulator screenshots that help to integrate more with the server community."
+          description="All the tools used for the flight simulation are available in it, as well as some other amazing features like polls for best simulator screenshots that help to integrate more with the server community."
           name="Flávio Oliveira"
           position="Perna do Vento channel Founder"
           image="Sample.jpg"
