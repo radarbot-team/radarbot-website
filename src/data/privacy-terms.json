@@ -1,0 +1,32 @@
+[
+  {
+    "title": "FINALITY",
+    "paragraph": "This policy aims to clarify what are and how the personal and sensitive data necessary for the interaction between **RADARBOT** and all natural or legal persons of public or private law will be collected, processed, disclosed and stored, in order to guarantee in a manner including privacy, clarification of the purpose of use, term of use, access, alteration and deletion of data collected by RADARBOT. It covers all collection of personal and sensitive data, both online and offline, from all of our channels. The data subject may, at its discretion, not provide the necessary information for any relationship purposes with RADARBOT, which may result in the impossibility of using the bot. These Terms of Service (“Terms”) are a legal agreement between RADARBOT (“bot”) and you (&quot;you&quot;). By using RADARBOT.XYZ (the &quot;Bot&quot;) or the website located at https://www.radarbot.xyz (the Site), which are collectively referred to as the Service, you agree (i) that you are 13 years old. age or older, (ii) if you are of legal age in your jurisdiction or older, who have read, understood and agree to be bound by the Terms, and (iii) if you are between 13 years of age and the legal age of majority in your jurisdiction, that your guardian legal have revised and agree to these Terms. RADARBOT is in line with DISCORD's terms of use and privacy guidelines, and the user must also comply with the platform's guidelines. The developer reserves the right, in its sole discretion, to modify or revise these Terms at any time, and you agree to be bound by such modifications or revisions. Any change or modification will take effect seven (7) days after posting on the Service, and your continued use of the Service after the effective date will constitute your acceptance and agreement to such changes or modifications. If you object to any changes or modifications, your only recourse will be to stop using the Service. By using our bots, you agree to abide by this Agreement. You are expected to have read and understood this Agreement. The developer is not responsible for any damage caused to servers by **RADARBOT** when used incorrectly or used for a different purpose for which it was developed.",
+    "number": "01",
+    "id": "finality"
+  },
+  {
+    "title": "Service use rights",
+    "paragraph": "the bot acts by providing useful tools for flight simulation and entertainment on Discord's servers. The Service may allow you to use messaging features to communicate with other users of the Service. Subject to your compliance with these Terms, Developer grants you a limited, revocable, non-exclusive, non-transferable and non-sublicensable license to use and access the Service solely for your **personal, non-commercial use**. You agree not (and not attempt to) (i) use the Service for any use or purpose not expressly permitted by these Terms or (ii) copy, adapt, modify, prepare derivative works on the basis of distributing, licensing, selling, transfer, publicly display, publicly perform, transmit or otherwise exploit the Service or any part of the Service, except as expressly permitted in these Terms. No license or right is granted to you by implication or otherwise under any intellectual property rights owned or controlled by the developer or its licensors, except for the permissions and rights expressly granted in these Terms. Developer reserves the right to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice. **Developer** reserves the right to refuse any user access to the Services without notice for any reason, including but not limited to a breach of the Terms. If you breach these Terms, the **developer** reserves the right to issue a notice of the breach or immediately terminate or suspend your use of the bot.",
+    "number": "02",
+    "id": "serviceuse"
+  },
+  {
+    "title": "Rights on RADARBOT - All rights reserved",
+    "paragraph": "The **developer** owns and reserves all intellectual property rights to any content. Users may therefore not use such content in any way that is not necessary or implied in the proper use of the Service. In particular, but without limitation, users may not copy, download, share (beyond the limits set out below), modify, translate, transform, publish, transmit, sell, sublicense, edit, transfer / assign to third parties or create derivative works of the content available on this bot, nor allow third parties to do so through the User or their device, even without the User's knowledge. Where explicitly stated on the website or support, the user may download, copy and/or share any content available through this website for his/her personal, non-commercial use only and provided that the copyright attributions and all other attributions requested by the owner are correctly implemented. Any legal limitations or exceptions applicable to copyright will not be affected.", 
+    "number": "03",
+    "id": "rights"
+  },
+  {
+    "title": "Data Controller",
+    "paragraph": "All data can only be accessed by the **developer**, who has agreed not to share / sell / distribute any of the stored data with third parties.",
+    "number": "04",
+    "id": "datacontroller"
+  },
+  {
+    "title": "Types of Collected Data",
+    "paragraph": "- ID do servidor que o bot está presente; \n - Nome do servidor que o bot está presente; ID Discord dos usuários que utilizam o bot, se o usuário nunca usou um comando do RadarBot, seu ID não é armazenado; Tag do Discord dos usuários que utilizam o bot. A regra acima também é válida; IP dos usuários que utilizam o bot. A regra acima também é válida",
+    "number": "05",
+    "id": "datatypes"
+  }
+]

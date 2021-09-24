@@ -33,6 +33,12 @@ export function Footer() {
             </a>
           </Link>
 
+          <Link passHref={false} href="/privacy-terms">
+            <a>
+              Terms of use and privacy policy
+            </a>
+          </Link>
+
           <Link passHref={true} href="https://docs.radarbot.xyz">
             <a target="_blank">
               Docs
