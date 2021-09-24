@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+model atc_lists {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guildID String @unique
+  guildName String
+  listName String @unique
+  type String
+  items Json
+}
+
+model charts {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  icao String
+  airportId String
+  cityName String
+  charts Json
+}
+
+model languages {
+  id String @id @default(dbgenerated()) @map("_id") @db.String
+  language String @unique
+}
+
+model pilot_lists {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guildId String
+  guildName String
+  listName String
+  type String
+  items Json
+}
+
+model screenshots {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guildId String
+  messageId String @unique
+  userId String
+  votesCount Int @default(0)
+  votes Json?
+  image String
+  content String? @default("")
+  alreadyTop Boolean @default(false)
+  topMessageId String?
+  username String
+  userAvatar String
+  user String
+}
+
+model screenshotsSettings {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guildId String @unique()
+  channel String
+  topChannel String
+  minimumVotes Int @default(5)
+  messagesFilter Boolean @default(false)
+}
+
+model guilds {
+  id  String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guildID String
+  guildName String
+}
+
+model settings {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  guild String @unique
+  settings Json
+}
+
+model users {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  email String @unique
+  userDiscordId String @unique
+  acessToken String
+}

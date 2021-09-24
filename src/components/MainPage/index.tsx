@@ -4,7 +4,10 @@ import Airplane from '../../../public/icons/airplane.svg';
 import ArrowDown from '../../../public/icons/arrowDown.svg';
 import styles from './MainPage.module.css';
 
+
 export function MainPage() {
+
+
   return (
     <div id="main" className={styles.container}>
       <div className={styles.main}>

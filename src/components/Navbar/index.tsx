@@ -5,6 +5,7 @@ import styles from './Navbar.module.css';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 import { useEffect, useState } from 'react';
+import { signIn } from 'next-auth/client';
 
 
 export function Navbar() {
@@ -104,7 +105,7 @@ export function Navbar() {
         )
       }
 
-      <button onClick={() => alert("Soon...")} className={styles.loginbutton}>
+      <button onClick={() => signIn('discord')} className={styles.loginbutton}>
         Login
       </button>
       {
