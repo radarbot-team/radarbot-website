@@ -33,7 +33,7 @@ export function Footer() {
             </a>
           </Link>
 
-          <Link passHref={false} href="/privacy-terms">
+          <Link passHref={false} href="/terms-privacy">
             <a>
               Terms of use and privacy policy
             </a>

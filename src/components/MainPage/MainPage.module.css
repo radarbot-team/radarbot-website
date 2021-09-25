@@ -33,6 +33,7 @@
 }
 
 .invitebutton {
+  margin-top: 1rem;
   background-color: var(--main-blue);
   display: flex;
   align-items: center;
@@ -46,6 +47,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  margin-bottom: 0.4rem;
 }
 
 .invitebutton:hover {
@@ -64,6 +66,20 @@
 .airplane {
   /* stroke-dashoffset: 300; */
   animation: airplane-animation 1s ease-in-out forwards;
+}
+
+.invitecontainer {
+  max-width: 20rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-weight: 200;
+}
+
+.disclaimer > a {
+  text-decoration: underline;
+  color: var(--main-font-color);
 }
 
 @keyframes airplane-animation {

@@ -9,9 +9,10 @@ import React from "react";
 import Head from 'next/head';
 import { TermsSection } from '../../components/TermsSection';
 import Terms from '../../data/privacy-terms.json';
+import { Footer } from "../../components/Footer";
 
-export default function PrivacyTerms() {
-  function scrollInto(parentId: string, targetId: string) : void | null {
+export default function TermsAndPrivacy() {
+  function scrollInto(parentId: string, targetId: string): void | null {
     const parent = document.getElementById(parentId);
 
     if (!parent) return;
@@ -19,8 +20,8 @@ export default function PrivacyTerms() {
 
     if (!target) return;
 
-    parent.scrollTo({top: target.scrollHeight, behavior: 'smooth'});
-}
+    parent.scrollTo({ top: target.scrollHeight, behavior: 'smooth' });
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -52,7 +53,7 @@ export default function PrivacyTerms() {
             </div>
             <div className={styles.headerdescription}>
               <p>
-                We always be carrefuly and want to provide best security and privacy to you.
+                We always be carreful and want to provide best security and privacy to you.
               </p>
             </div>
           </div>
@@ -80,6 +81,7 @@ export default function PrivacyTerms() {
                 />
               ))}
           </div>
+          <Footer />
         </div>
       </div>
     </div>

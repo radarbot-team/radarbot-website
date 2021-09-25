@@ -28,11 +28,11 @@
   width: 20%;
   background-color: rgba(17, 19, 48, 0.6);
   float: left;
+  display: none;
 }
 
 .scrollMenu {
   /* overflow-y: scroll; */
-  
   padding: 1rem;
 }
 
@@ -51,14 +51,15 @@
 
 .main {
   /* background-color: #e2e2e2; */
-  width: 80%;
-  padding: 0 2rem;
+  width: 100%;
+  padding: 0 4rem;
   float: right;
   display: flex;
   height: calc(100vh - 4rem);
   scroll-padding: 5rem 0 0 0;
   flex-direction: column;
   /* overflow-y: auto; */
+  margin-bottom: 10rem;
 }
 
 .header {
@@ -119,7 +120,23 @@
 }
 
 
-/* .terms {
-  background-color: #e2e2e2;
-  width: 100%;
-} */
+.terms {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headertitle {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .headerdescription {
+    justify-content: flex-start;
+    border-top: none;
+  }
+}

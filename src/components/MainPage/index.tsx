@@ -3,6 +3,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Airplane from '../../../public/icons/airplane.svg';
 import ArrowDown from '../../../public/icons/arrowDown.svg';
 import styles from './MainPage.module.css';
+import Link from 'next/link';
 
 export function MainPage() {
   return (
@@ -18,15 +19,19 @@ export function MainPage() {
             A multi language advanced Discord bot Made by{' '}
             <strong>Flight Simmers</strong> for <strong>Flight Simmers</strong>
           </p>
-
-          <button className={styles.invitebutton}>
-            <RiArrowDownCircleLine size="25" color="#FFF" />
-            <p>
-              <a href="https://bit.ly/RadarBotInvite">
-                Add to your Discord Server
-              </a>
-            </p>
-          </button>
+          <div className={styles.invitecontainer}>
+            <button className={styles.invitebutton}>
+              <RiArrowDownCircleLine size="25" color="#FFF" />
+              <p>
+                <a href="https://bit.ly/RadarBotInvite">
+                  Add to your Discord Server
+                </a>
+              </p>
+            </button>
+            <span className={styles.disclaimer}>
+              Adding this you agree with our <Link href="/terms-privacy"><a>Terms and Privacy Policy</a></Link>
+            </span>
+          </div>
         </div>
         <div className={styles.airplane}>
           <Airplane />

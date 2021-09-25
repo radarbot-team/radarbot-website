@@ -25,8 +25,62 @@
   },
   {
     "title": "Types of Collected Data",
-    "paragraph": "- ID do servidor que o bot está presente; \n - Nome do servidor que o bot está presente; ID Discord dos usuários que utilizam o bot, se o usuário nunca usou um comando do RadarBot, seu ID não é armazenado; Tag do Discord dos usuários que utilizam o bot. A regra acima também é válida; IP dos usuários que utilizam o bot. A regra acima também é válida",
+    "paragraph": "- ID of the server the bot is present on; \n - Name of the server the bot is present on; \n - ID Discord of users using the bot, if the user has never used a RadarBot command, his ID is not stored; \n - Discord tag of users using the bot. The rule above is also valid; \n - IP of users using the bot. The rule above is also valid.",
     "number": "05",
     "id": "datatypes"
+  },
+  {
+    "title": "Usage and storage of user data and guild data",
+    "paragraph": "Data storage is done in a database hosted on AWS servers, with the **developer** solely responsible for accessing the data. Data is stored indefinitely unless the user requests revocation.",
+    "number": "06",
+    "id": "storage"
+  },
+  {
+    "title": "Data Revocation",
+    "paragraph": "The user can request the revocation of data collection, as well as the use and storage, through direct contact with the **developer**. The **developer** undertakes to delete all data collected and stored on the server mentioned herein.",
+    "number": "07",
+    "id": "revocation"
+  },
+  {
+    "title": "Use of RADARBOT",
+    "paragraph": "This bot may only be used within the scope for which it is provided, in accordance with these Terms and applicable law. \n Users are solely responsible for ensuring that their use of this bot does not violate any applicable laws, regulations or third-party rights. \n Therefore, the developer and owner of **RadarBot** reserves the right to take any appropriate action to protect its legitimate interests, including denying users access to the bot, terminating contracts, reporting any improper conduct to competent authorities - such as judicial or administrative authorities - at all times that users engage or are suspected of engaging in any of the following activities: \n 1. violate laws, regulations and/or these Terms; \n 2. infringe any third party rights; \n 3. considerably harm the legitimate interests of the Developer Owner; \n 4. offend the owner or any third party. \n\n The **developer** reserves the right to remove **RadarBot** from any guild at any time. We may remove **RadarBot** from a server for any reason, such as: (a) The Clan is abusing the bot, causing problems with it. (b) The Guild is slandering the bot or developer's reputation. (c) We do not want our services to be associated with the server. \n If you are banned from any guild related to flight simulation or if **RadarBot** is running for any reason, you can apply a ban and be blacklisted on any of our other servers and services. If you spam commands or abuse any of the services in any way, you will be blacklisted and banned from any of the services. It will also be added to Discord's banlists and we'll let other bot developers know about you, and if it's a serious violation (such as hacking, harassment and other violations), you can get banned from all servers RadarBot is on.",
+    "number": "08",
+    "id": "use"
+  },
+  {
+    "title": "Warranty disclaimer",
+    "paragraph": "**RadarBot** is delivered “as is”, which is still under development. It should always be improved for the best user experience. Being exempt from the guarantee of satisfaction.",
+    "number": "09",
+    "id": "warranty"
+  },
+  {
+    "title": "Limitation of Liability",
+    "paragraph": "To the fullest extent permitted by law, in no event shall the developer be liable to you or any third party for any consequence, incidental, special, punitive or other indirect damages, including any loss of profits or loss of data, arising out of its use, of the Service or other materials accessed through the Service or downloaded from the Service, whether based on warranty, contract, claim, or any other legal theory, and if the company has been advised of the possibility of such damages. \n\n You specifically acknowledge that the **Developer** shall not be liable for User Content, including without limitation your Content, or for the defamatory, offensive or illegal conduct of any third party and that the risk of damages or damages arising therefrom rests entirely with you.",
+    "number": "10",
+    "id": "liability"
+  },
+  {
+    "title": "Applicable law",
+    "paragraph": "These Terms are governed by the law of the location (Brazil) where the **developer** is based.",
+    "number": "11",
+    "id": "law"
+  },
+  {
+    "title": "Jurisdiction forum", 
+    "paragraph": "The exclusive jurisdiction to decide on any dispute arising out of or relating to these Terms rests with the courts of the place where the developer is based.",
+    "number": "12",
+    "id": "forum"
+  },
+  {
+    "title": "Dispute Resolution",
+    "paragraph": "###Amicable Dispute Resolution \n\n Users can submit any disputes to the developer, who will try to resolve them amicably. \n Although the users' right to take legal action always remains unaffected, in the event of any dispute regarding the use of this website or the service, users are invited to contact the developer using the contact details provided in this document. \n Developer will process the claim without undue delay and within thirty (30) days of receipt.",
+    "number": "13",
+    "id": "dispute"
+  },
+  {
+    "title": "Assent and Permission",
+    "paragraph": "Using **RadarBot** affirms that you have read this Agreement, understand it and agree to be bound by its contents. \n Furthermore, it allows the collection and processing of the Data mentioned herein, in accordance with the General Data Protection Law.",
+    "number": "14",
+    "id": "permission"
   }
 ]

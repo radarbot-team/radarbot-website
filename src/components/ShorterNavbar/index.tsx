@@ -10,7 +10,7 @@ export function ShorterNavbar() {
   return (
     <div className={styles.container}>
       <Link href="/" passHref={true}>
-        <RadarLogo />
+        <RadarLogo className={styles.logo} />
       </Link>
 
       <button onClick={() => alert("Soon...")} className={styles.loginbutton}>

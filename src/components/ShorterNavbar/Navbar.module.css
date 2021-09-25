@@ -35,6 +35,10 @@
   border: 3px solid transparent;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .navbar > *.navbaractive {
   color: #fff;
   border-bottom: 3px solid var(--main-blue);
