@@ -23,6 +23,7 @@
 
 .logo {
   display: flex;
+  cursor: pointer;
   transform: translateY(-130%);
 }
 

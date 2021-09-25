@@ -43,7 +43,7 @@ export function MainPage() {
       </ScrollLink>
 
       <TransitionsModal
-        title="Adding RadarBot to you server you agree with [TermsAndConditions](/terms-privacy)"
+        title="Adding RadarBot to you server you agree with [Terms And Privacy Policy](/terms-privacy)"
         cancelTextButton="Cancel"
         okTextButton="Add"
         open={open}

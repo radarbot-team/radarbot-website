@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 import { BiArrowToTop } from 'react-icons/bi';
 import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 export function Footer() {
   return (
@@ -12,7 +12,9 @@ export function Footer() {
       <div className={styles.main}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <LogoRadarBot />
+            <Link passHref={true} href="/">
+              <LogoRadarBot />
+            </Link>
           </div>
 
 
@@ -69,7 +71,7 @@ export function Footer() {
       </div>
 
       <span>
-      created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by andrebrito16
+        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by andrebrito16
       </span>
     </div>
   )
