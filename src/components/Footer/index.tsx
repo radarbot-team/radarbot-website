@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 import { BiArrowToTop } from 'react-icons/bi';
 import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 export function Footer() {
   return (
@@ -12,7 +12,9 @@ export function Footer() {
       <div className={styles.main}>
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <LogoRadarBot />
+            <Link passHref={true} href="/">
+              <LogoRadarBot />
+            </Link>
           </div>
 
 
@@ -30,6 +32,12 @@ export function Footer() {
           <Link passHref={true} href="https://bit.ly/RadarBotInvite">
             <a target="_blank">
               Invite RadarBot
+            </a>
+          </Link>
+
+          <Link passHref={false} href="/terms-privacy">
+            <a>
+              Terms of use and privacy policy
             </a>
           </Link>
 
@@ -52,18 +60,24 @@ export function Footer() {
           </Link>
         </div>
 
-
-        <ScrollLink className={styles.scrollToTop} spy={true} smooth={true} to="main">
-          <BiArrowToTop className={styles.arrowTop} />
-          <span>
-            Scroll To Top
-          </span>
-        </ScrollLink>
+        <div className={styles.rightSide}>
+          <ScrollLink className={styles.scrollToTop} spy={true} smooth={true} to="main">
+            <BiArrowToTop className={styles.arrowTop} />
+            <span>
+              Scroll To Top
+            </span>
+          </ScrollLink>
+          <div className={styles.credits}>
+            <span>
+              UI By: Carolina Eguchi and Ruy Monteiro
+            </span>
+          </div>
+        </div>
 
       </div>
 
-      <span>
-      created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by andrebrito16
+      <span className={styles.createdBy}>
+        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by <Link href="https://andrebrito.vercel.app"><a target="_blank">andrebrito16</a></Link>
       </span>
     </div>
   )
