@@ -80,10 +80,20 @@
   width: 4rem;
   height: 4rem;
 }
-
+*
 .container > span {
   margin-top: 4rem;
   font-weight: bold;
+}
+
+.credits {
+  font-weight: 200;
+  margin-top: 1rem;
+  max-width: 10rem;
+}
+
+.createdBy > a {
+  color: var(--main-blue);
 }
 
 @media screen and (max-width: 768px) {

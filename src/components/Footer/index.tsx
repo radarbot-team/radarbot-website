@@ -60,18 +60,24 @@ export function Footer() {
           </Link>
         </div>
 
-
-        <ScrollLink className={styles.scrollToTop} spy={true} smooth={true} to="main">
-          <BiArrowToTop className={styles.arrowTop} />
-          <span>
-            Scroll To Top
-          </span>
-        </ScrollLink>
+        <div className={styles.rightSide}>
+          <ScrollLink className={styles.scrollToTop} spy={true} smooth={true} to="main">
+            <BiArrowToTop className={styles.arrowTop} />
+            <span>
+              Scroll To Top
+            </span>
+          </ScrollLink>
+          <div className={styles.credits}>
+            <span>
+              UI By: Carolina Eguchi and Ruy Monteiro
+            </span>
+          </div>
+        </div>
 
       </div>
 
-      <span>
-        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by andrebrito16
+      <span className={styles.createdBy}>
+        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by <Link href="https://andrebrito.vercel.app"><a target="_blank">andrebrito16</a></Link>
       </span>
     </div>
   )
