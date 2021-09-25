@@ -22,7 +22,6 @@ export function MainPage() {
             A multi language advanced Discord bot Made by{' '}
             <strong>Flight Simmers</strong> for <strong>Flight Simmers</strong>
           </p>
-          <div className={styles.invitecontainer}>
             <button className={styles.invitebutton} onClick={() => setOpen(true)}>
               <RiArrowDownCircleLine size="25" color="#FFF" />
               <p>
@@ -31,10 +30,6 @@ export function MainPage() {
                 </a>
               </p>
             </button>
-            <span className={styles.disclaimer}>
-              Adding this you agree with our <Link href="/terms-privacy"><a>Terms and Privacy Policy</a></Link>
-            </span>
-          </div>
         </div>
         <div className={styles.airplane}>
           <Airplane />
