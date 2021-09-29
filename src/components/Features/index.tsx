@@ -35,7 +35,7 @@ export function Features() {
           title="Flight Utilities"
           description="The best tools for virtual flights!"
           features={[
-            "Matear & TAF",
+            "Metar & TAF",
             "Charts",
             "Flight Briefing"
           ]}
