@@ -33,6 +33,7 @@
 }
 
 .invitebutton {
+  margin-top: 1rem;
   background-color: var(--main-blue);
   display: flex;
   align-items: center;
@@ -46,6 +47,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  margin-bottom: 0.4rem;
 }
 
 .invitebutton:hover {

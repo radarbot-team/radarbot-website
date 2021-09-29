@@ -1,0 +1,142 @@
+.container ::-webkit-scrollbar {
+  display: block;
+}
+
+.container ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #bcc1c3;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-font-color);
+  height: 100vh;
+}
+
+.content {
+  height: calc(100vh - 4rem);
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.side {
+  
+  padding: 0 2rem;
+  width: 20%;
+  background-color: rgba(17, 19, 48, 0.6);
+  float: left;
+  display: none;
+}
+
+.scrollMenu {
+  /* overflow-y: scroll; */
+  padding: 1rem;
+}
+
+.activenav {
+  color: var(--main-blue);
+}
+
+.itemMenu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid #e2e2e2;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.main {
+  /* background-color: #e2e2e2; */
+  width: 100%;
+  padding: 0 4rem;
+  float: right;
+  display: flex;
+  height: calc(100vh - 4rem);
+  scroll-padding: 5rem 0 0 0;
+  flex-direction: column;
+  /* overflow-y: auto; */
+  margin-bottom: 10rem;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.headertitle {
+  font-weight: bold;
+  font-size: 3.125rem;
+  max-width: 32rem;
+}
+
+.headerdescription {
+  border-top: 2px solid var(--main-blue);
+  max-width: 15.8125rem;
+}
+
+.description > p {
+  margin-top: 0.5rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-top: 1.5rem;
+}
+
+.intro {
+  text-align: left;
+}
+
+.introtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.introtitle > span {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.introdescription {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.terms {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headertitle {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .headerdescription {
+    justify-content: flex-start;
+    border-top: none;
+  }
+}

@@ -95,8 +95,9 @@
   .container {
     width: 25rem;
     height: 20rem;
+    flex-direction: row;
   }
-
+  
   .title {
     font-size: 1.2rem;
   }
