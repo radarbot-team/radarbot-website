@@ -3,11 +3,13 @@ import { Link as ScrollLink } from 'react-scroll';
 import Airplane from '../../../public/icons/airplane.svg';
 import ArrowDown from '../../../public/icons/arrowDown.svg';
 import styles from './MainPage.module.css';
+import Link from 'next/link';
+import { TransitionsModal } from '../TransitionsModal';
+import { useState } from 'react';
 
 
 export function MainPage() {
-
-
+  const [open, setOpen] = useState(false);
   return (
     <div id="main" className={styles.container}>
       <div className={styles.main}>
@@ -21,15 +23,14 @@ export function MainPage() {
             A multi language advanced Discord bot Made by{' '}
             <strong>Flight Simmers</strong> for <strong>Flight Simmers</strong>
           </p>
-
-          <button className={styles.invitebutton}>
-            <RiArrowDownCircleLine size="25" color="#FFF" />
-            <p>
-              <a href="https://bit.ly/RadarBotInvite">
-                Add to your Discord Server
-              </a>
-            </p>
-          </button>
+            <button className={styles.invitebutton} onClick={() => setOpen(true)}>
+              <RiArrowDownCircleLine size="25" color="#FFF" />
+              <p>
+                <a>
+                  Add to your Discord Server
+                </a>
+              </p>
+            </button>
         </div>
         <div className={styles.airplane}>
           <Airplane />
@@ -41,6 +42,18 @@ export function MainPage() {
           <ArrowDown />
         </button>
       </ScrollLink>
+
+      <TransitionsModal
+        title="Adding RadarBot to you server you agree with [Terms And Privacy Policy](/terms-privacy)"
+        cancelTextButton="Cancel"
+        okTextButton="Add"
+        open={open}
+        handleClose={() => setOpen((prev) => !prev)}
+        handleOkButton={() => {
+          window.open('https://bit.ly/RadarBotInvite', "_blank")
+          setOpen(false);
+        }}
+      />
     </div>
   );
 }

@@ -14,12 +14,13 @@ interface IColor {
 }
 
 export function TestimonialCard(props: {
-  color: string,
-  title: string,
-  description: string,
-  image?: string,
-  name: string,
-  position: string,
+  color: string
+  title: string
+  description: string
+  image: StaticImageData
+  name: string
+  position: string
+  link: string
 }) {
   const [rgbColor, setRgbColor] = useState<IColor>({ red: 0, green: 0, blue: 0, alpha: 0 });
   const [arrowColor, setArrowColor] = useState<string>('#FFF');
@@ -38,7 +39,7 @@ export function TestimonialCard(props: {
       }}>
       <div className={styles.innercontainer}>
         <div>
-          <Quotes style={{ color: "#E08537" }} />
+          <Quotes style={{ color: props.color }} />
         </div>
 
         <div className={styles.title}>
@@ -53,18 +54,18 @@ export function TestimonialCard(props: {
 
         <footer>
           <div className={styles.footer}>
-            <Link href="https://youtube.com/pernadovento" passHref={true}>
-              <Image className={styles.footerImage} width="48px" height="47px" src={PernaDoVentoLogo} alt="pernadoventologo" />
+            <Link href={props.link} passHref={true}>
+              <Image className={styles.footerImage} width="48px" height="47px" src={props.image} alt="pernadoventologo" />
             </Link>
             <div className={styles.footerText}>
 
               <div className={styles.name} style={{
-                color: "#E08537"
+                color: props.color
               }}>
-                <span>Flávio Oliveira</span>
+                <span>{props.name}</span>
               </div>
               <div className={styles.footerDescription}>
-                Fundador Canal Perna do Vento
+                {props.position}
               </div>
 
             </div>

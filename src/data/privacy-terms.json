@@ -1,0 +1,86 @@
+[
+  {
+    "title": "FINALITY",
+    "paragraph": "This policy aims to clarify what are and how the personal and sensitive data necessary for the interaction between **RADARBOT** and all natural or legal persons of public or private law will be collected, processed, disclosed and stored, in order to guarantee in a manner including privacy, clarification of the purpose of use, term of use, access, alteration and deletion of data collected by RADARBOT. It covers all collection of personal and sensitive data, both online and offline, from all of our channels. The data subject may, at its discretion, not provide the necessary information for any relationship purposes with RADARBOT, which may result in the impossibility of using the bot. These Terms of Service (“Terms”) are a legal agreement between RADARBOT (“bot”) and you (&quot;you&quot;). By using RADARBOT.XYZ (the &quot;Bot&quot;) or the website located at https://www.radarbot.xyz (the Site), which are collectively referred to as the Service, you agree (i) that you are 13 years old. age or older, (ii) if you are of legal age in your jurisdiction or older, who have read, understood and agree to be bound by the Terms, and (iii) if you are between 13 years of age and the legal age of majority in your jurisdiction, that your guardian legal have revised and agree to these Terms. RADARBOT is in line with DISCORD's terms of use and privacy guidelines, and the user must also comply with the platform's guidelines. The developer reserves the right, in its sole discretion, to modify or revise these Terms at any time, and you agree to be bound by such modifications or revisions. Any change or modification will take effect seven (7) days after posting on the Service, and your continued use of the Service after the effective date will constitute your acceptance and agreement to such changes or modifications. If you object to any changes or modifications, your only recourse will be to stop using the Service. By using our bots, you agree to abide by this Agreement. You are expected to have read and understood this Agreement. The developer is not responsible for any damage caused to servers by **RADARBOT** when used incorrectly or used for a different purpose for which it was developed.",
+    "number": "01",
+    "id": "finality"
+  },
+  {
+    "title": "Service use rights",
+    "paragraph": "the bot acts by providing useful tools for flight simulation and entertainment on Discord's servers. The Service may allow you to use messaging features to communicate with other users of the Service. Subject to your compliance with these Terms, Developer grants you a limited, revocable, non-exclusive, non-transferable and non-sublicensable license to use and access the Service solely for your **personal, non-commercial use**. You agree not (and not attempt to) (i) use the Service for any use or purpose not expressly permitted by these Terms or (ii) copy, adapt, modify, prepare derivative works on the basis of distributing, licensing, selling, transfer, publicly display, publicly perform, transmit or otherwise exploit the Service or any part of the Service, except as expressly permitted in these Terms. No license or right is granted to you by implication or otherwise under any intellectual property rights owned or controlled by the developer or its licensors, except for the permissions and rights expressly granted in these Terms. Developer reserves the right to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice. **Developer** reserves the right to refuse any user access to the Services without notice for any reason, including but not limited to a breach of the Terms. If you breach these Terms, the **developer** reserves the right to issue a notice of the breach or immediately terminate or suspend your use of the bot.",
+    "number": "02",
+    "id": "serviceuse"
+  },
+  {
+    "title": "Rights on RADARBOT - All rights reserved",
+    "paragraph": "The **developer** owns and reserves all intellectual property rights to any content. Users may therefore not use such content in any way that is not necessary or implied in the proper use of the Service. In particular, but without limitation, users may not copy, download, share (beyond the limits set out below), modify, translate, transform, publish, transmit, sell, sublicense, edit, transfer / assign to third parties or create derivative works of the content available on this bot, nor allow third parties to do so through the User or their device, even without the User's knowledge. Where explicitly stated on the website or support, the user may download, copy and/or share any content available through this website for his/her personal, non-commercial use only and provided that the copyright attributions and all other attributions requested by the owner are correctly implemented. Any legal limitations or exceptions applicable to copyright will not be affected.", 
+    "number": "03",
+    "id": "rights"
+  },
+  {
+    "title": "Data Controller",
+    "paragraph": "All data can only be accessed by the **developer**, who has agreed not to share / sell / distribute any of the stored data with third parties.",
+    "number": "04",
+    "id": "datacontroller"
+  },
+  {
+    "title": "Types of Collected Data",
+    "paragraph": "- ID of the server the bot is present on; \n - Name of the server the bot is present on; \n - ID Discord of users using the bot, if the user has never used a RadarBot command, his ID is not stored; \n - Discord tag of users using the bot. The rule above is also valid; \n - IP of users using the bot. The rule above is also valid.",
+    "number": "05",
+    "id": "datatypes"
+  },
+  {
+    "title": "Usage and storage of user data and guild data",
+    "paragraph": "Data storage is done in a database hosted on AWS servers, with the **developer** solely responsible for accessing the data. Data is stored indefinitely unless the user requests revocation.",
+    "number": "06",
+    "id": "storage"
+  },
+  {
+    "title": "Data Revocation",
+    "paragraph": "The user can request the revocation of data collection, as well as the use and storage, through direct contact with the **developer**. The **developer** undertakes to delete all data collected and stored on the server mentioned herein.",
+    "number": "07",
+    "id": "revocation"
+  },
+  {
+    "title": "Use of RADARBOT",
+    "paragraph": "This bot may only be used within the scope for which it is provided, in accordance with these Terms and applicable law. \n Users are solely responsible for ensuring that their use of this bot does not violate any applicable laws, regulations or third-party rights. \n Therefore, the developer and owner of **RadarBot** reserves the right to take any appropriate action to protect its legitimate interests, including denying users access to the bot, terminating contracts, reporting any improper conduct to competent authorities - such as judicial or administrative authorities - at all times that users engage or are suspected of engaging in any of the following activities: \n 1. violate laws, regulations and/or these Terms; \n 2. infringe any third party rights; \n 3. considerably harm the legitimate interests of the Developer Owner; \n 4. offend the owner or any third party. \n\n The **developer** reserves the right to remove **RadarBot** from any guild at any time. We may remove **RadarBot** from a server for any reason, such as: (a) The Clan is abusing the bot, causing problems with it. (b) The Guild is slandering the bot or developer's reputation. (c) We do not want our services to be associated with the server. \n If you are banned from any guild related to flight simulation or if **RadarBot** is running for any reason, you can apply a ban and be blacklisted on any of our other servers and services. If you spam commands or abuse any of the services in any way, you will be blacklisted and banned from any of the services. It will also be added to Discord's banlists and we'll let other bot developers know about you, and if it's a serious violation (such as hacking, harassment and other violations), you can get banned from all servers RadarBot is on.",
+    "number": "08",
+    "id": "use"
+  },
+  {
+    "title": "Warranty disclaimer",
+    "paragraph": "**RadarBot** is delivered “as is”, which is still under development. It should always be improved for the best user experience. Being exempt from the guarantee of satisfaction.",
+    "number": "09",
+    "id": "warranty"
+  },
+  {
+    "title": "Limitation of Liability",
+    "paragraph": "To the fullest extent permitted by law, in no event shall the developer be liable to you or any third party for any consequence, incidental, special, punitive or other indirect damages, including any loss of profits or loss of data, arising out of its use, of the Service or other materials accessed through the Service or downloaded from the Service, whether based on warranty, contract, claim, or any other legal theory, and if the company has been advised of the possibility of such damages. \n\n You specifically acknowledge that the **Developer** shall not be liable for User Content, including without limitation your Content, or for the defamatory, offensive or illegal conduct of any third party and that the risk of damages or damages arising therefrom rests entirely with you.",
+    "number": "10",
+    "id": "liability"
+  },
+  {
+    "title": "Applicable law",
+    "paragraph": "These Terms are governed by the law of the location (Brazil) where the **developer** is based.",
+    "number": "11",
+    "id": "law"
+  },
+  {
+    "title": "Jurisdiction forum", 
+    "paragraph": "The exclusive jurisdiction to decide on any dispute arising out of or relating to these Terms rests with the courts of the place where the developer is based.",
+    "number": "12",
+    "id": "forum"
+  },
+  {
+    "title": "Dispute Resolution",
+    "paragraph": "###Amicable Dispute Resolution \n\n Users can submit any disputes to the developer, who will try to resolve them amicably. \n Although the users' right to take legal action always remains unaffected, in the event of any dispute regarding the use of this website or the service, users are invited to contact the developer using the contact details provided in this document. \n Developer will process the claim without undue delay and within thirty (30) days of receipt.",
+    "number": "13",
+    "id": "dispute"
+  },
+  {
+    "title": "Assent and Permission",
+    "paragraph": "Using **RadarBot** affirms that you have read this Agreement, understand it and agree to be bound by its contents. \n Furthermore, it allows the collection and processing of the Data mentioned herein, in accordance with the General Data Protection Law.",
+    "number": "14",
+    "id": "permission"
+  }
+]
