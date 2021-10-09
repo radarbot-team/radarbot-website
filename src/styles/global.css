@@ -17,6 +17,7 @@ body {
   --feature-card-green: #33cc4c;
   --main-blue-hover: #10afba;
   --main-grey: #8e8e8e;
+  --main-grey-hover: #444444;
 }
 
 @media (max-width: 1080px) {

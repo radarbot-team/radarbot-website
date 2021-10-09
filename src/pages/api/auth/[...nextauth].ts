@@ -45,6 +45,7 @@ export default NextAuth({
           })
         }
         global.accessToken = tokens.accessToken
+     
         return {
           id: profile.id,
           name: profile.username,

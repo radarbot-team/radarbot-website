@@ -1,0 +1,39 @@
+
+.outsideContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  color: var(--main-font-color);
+  padding: 0 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3.125rem;
+  max-width: 32rem;
+}
+
+.description {
+  border-top: 2px solid var(--main-blue);
+  max-width: 15.8125rem;
+}
+
+.description > p {
+  margin-top: 0.5rem;
+}
+
+.servers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

@@ -1,17 +1,21 @@
+import { signIn } from 'next-auth/client';
 import Link from 'next/link';
+import { useState } from 'react';
+import { HiOutlineMenuAlt1 } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
 import { Link as ScrollLink } from 'react-scroll';
 import RadarLogo from '../../../public/icons/radarlogo.svg';
 import styles from './Navbar.module.css';
-import { HiOutlineMenuAlt1 } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
-import { useEffect, useState } from 'react';
-import { signIn } from 'next-auth/client';
+import { useSession } from 'next-auth/client';
+import Image from 'next/image';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/AuthContext';
 
-
-export function Navbar() {
+export function Navbar(props: {
+  avatar?: string;
+}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
-
+  const [session, loading] = useSession();
   return (
     <div className={styles.container}>
       <RadarLogo />
@@ -105,9 +109,16 @@ export function Navbar() {
         )
       }
 
-      <button onClick={() => signIn('discord')} className={styles.loginbutton}>
-        Login
-      </button>
+      {
+        (session && props.avatar) ? (
+
+          <Image className={styles.avatar} src={props.avatar ? props.avatar : RadarLogo} alt='avatar' width={55} height={55} />
+        ) : (
+          <button onClick={() => signIn('discord')} className={styles.loginbutton}>
+            Login
+          </button>
+        )
+      }
       {
         modalIsOpen ? (
           <IoClose
@@ -120,7 +131,6 @@ export function Navbar() {
             className={styles.mobilebutton}
             onClick={() => setModalIsOpen((prev) => !prev)}
             size="2rem" />
-
         )
       }
 

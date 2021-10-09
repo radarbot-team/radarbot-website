@@ -6,6 +6,7 @@ type Data = {
   name?: string
   error?: string
   managedGuilds?: string[]
+  dashboardGuilds?: string[]
 }
 
 type IBotGuilds = [
@@ -35,7 +36,6 @@ type IGuilds = [
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { authorization } = req.headers;
-
   if (!authorization) {
     return res.status(401).json({ error: 'Missing Authorization header' });
 
@@ -56,11 +56,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   }
 
   // Return only managed guilds where RadarBot is in
-  
-
   const managedGuilds : any = guilds.filter((guild) => botGuilds.find((botGuild) => (botGuild.id === guild.id) && (guild.permissions & 0x20) === 0x20))
 
+  // Return both managed guilds and guilds match to user edit Screenshots center
+  const bothGuilds = guilds.filter((guild) => botGuilds.find((botGuild) => (botGuild.id === guild.id)))
+
+  const dashboardGuilds : any = bothGuilds.map((guild) => {
+    if (botGuilds.find((botGuild) => (botGuild.id === guild.id) && (guild.permissions & 0x20) === 0x20)) {
+      return {
+        ...guild,
+        editPermissions: true
+      }
+    } else {
+      return {
+        ...guild,
+        editPermissions: false
+      }
+    }
+  })
+  
   return res.status(200).json({
-    managedGuilds
+    dashboardGuilds
   })
 }

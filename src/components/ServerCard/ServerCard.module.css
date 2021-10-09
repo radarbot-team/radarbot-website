@@ -1,0 +1,116 @@
+.container {
+  z-index: 1;
+  position: relative;
+  width: 320px;
+  height: 353px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+}
+
+.innercontainer {
+  z-index: 0;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 3px;
+  background: var(--background);
+  display: flex;
+  padding: 1rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.features {
+  font-family: 'Rajdhani';
+  font-size: 0.8125rem;
+}
+
+.footer {
+  font-weight: lighter;
+}
+
+.arrow {
+  margin-right: 0.2rem;
+  color: var(--main-font-color)
+}
+
+.buttons {
+  padding: 1rem;
+}
+
+.dashboardbutton {
+  background-color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  width: 18.81rem;
+  height: 4rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dashboardbutton:hover {
+  background-color: var(--main-blue-hover);
+}
+
+.screenshotsbutton {
+  background-color: var(--main-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  width: 18.81rem;
+  height: 4rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.screenshotsbutton:hover {
+  background-color: var(--main-grey-hover);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}
