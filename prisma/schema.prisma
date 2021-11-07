@@ -57,6 +57,8 @@ model screenshots {
   username String
   userAvatar String
   user String
+  width Int
+  height Int
 }
 
 model screenshotsSettings {

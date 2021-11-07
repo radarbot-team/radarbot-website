@@ -29,23 +29,20 @@ export default function Dashboard() {
   const [isLoading, setIsLoading] = useState<Boolean>(true);
 
   useEffect(() => {
-    signIn();
-    fetchGuilds();
+    signIn().then(() => fetchGuilds());
+    
   }, []);
 
-  const { signIn } = useContext(AuthContext);
+  const { isAuthenticated, signIn } = useContext(AuthContext);
 
   async function fetchGuilds() {
-    const { token } = (await axios.get('/api/auth/session')).data;
-
-
-
+    const { token } = await (await axios.get('/api/auth/session')).data;
+    console.log(token)
     axios.get('/api/@me/managedguilds', {
       headers: {
         authorization: `Bearer ${token}`
       }
     }).then((res) => {
-
       setManagedGuilds(res.data.dashboardGuilds);
       GetMemberInfo(token).then((member) => {
         setUserAvatar(member.avatar);
@@ -60,19 +57,19 @@ export default function Dashboard() {
     )
   }
 
-  if (!session) {
+  if (!isAuthenticated) {
     return (
       Router.push('/')
     )
   }
   return (
     <div className={styles.outsideContainer}>
-      <NavbarDasboard/>
+      <NavbarDasboard />
       <div className={styles.container}>
 
         <div className={styles.header}>
           <div className={styles.title}>
-            <strong>Hi, {session.user?.name}</strong>
+            <strong>Hi, {session?.user?.name}</strong>
           </div>
           <div className={styles.description}>
             <p>
@@ -80,7 +77,7 @@ export default function Dashboard() {
             </p>
           </div>
         </div>
-
+        <strong>Choose a server</strong>
         <div className={styles.servers}>
           {
             managedGuilds && managedGuilds.map((guild: IGuild) => (

@@ -4,7 +4,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { Provider } from 'next-auth/client';
-import { AuthProvider } from '../contexts/AuthContext';
+import { AuthContext, AuthProvider } from '../contexts/AuthContext';
+import { useContext, useEffect } from 'react';
 
 
 function MyApp({ Component, pageProps }: AppProps) {

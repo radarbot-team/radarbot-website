@@ -6,9 +6,11 @@ export default async function GetMemberInfo(token: string) {
     headers: {
       authorization: `Bearer ${token}`,
     }
-  })
+  }).catch(() => {
+    return null;
+  });
   return {
-    data: response.data,
-    avatar: `https://cdn.discordapp.com/avatars/${response.data.id}/${response.data.avatar}.png`
+    data: response?.data,
+    avatar: `https://cdn.discordapp.com/avatars/${response?.data.id}/${response?.data.avatar}.png`
   }
 }

@@ -1,0 +1,52 @@
+.container {
+  max-width: 40rem;
+}
+
+.image {
+  /* display: none; */
+  max-width: 40rem;
+  height: auto;
+}
+
+.footer {
+  color: var(--main-font-color);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.author > p {
+  margin-left: 0.8rem;
+}
+
+.avatar {
+  border-radius: 255px;
+}
+
+.votes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.voteicon {
+  color: red;
+  width: 1.5rem;
+  height: auto;
+}
+
+.votes > span {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+

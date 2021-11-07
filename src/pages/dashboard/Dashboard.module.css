@@ -12,6 +12,12 @@
   flex-direction: column;
 }
 
+.container > strong {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
