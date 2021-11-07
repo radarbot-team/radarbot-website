@@ -42,7 +42,7 @@ export function Analytics() {
         <AnalyticsInfo
           color="#F09241"
           description="Servers"
-          value="150"
+          value="160"
           duration="5"
         />
       </div>
