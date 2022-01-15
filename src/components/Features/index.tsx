@@ -24,9 +24,10 @@ export function Features() {
           features={[
             "English",
             "Portuguese",
-            "Spanish"
+            "Spanish",
+            "French"
           ]}
-          footer="Soon French will be added to the list!"
+          footer="Soon Italian will be added to the list!"
         />
 
         <FeatureCard
@@ -37,7 +38,8 @@ export function Features() {
           features={[
             "Metar & TAF",
             "Charts",
-            "Flight Briefing"
+            "Flight Briefing",
+            "Real Flights information"
           ]}
           footer="We constantly add new features, stay tunned!"
         />
