@@ -6,7 +6,6 @@
   flex-direction: column;
   margin: 1rem;
   padding: 1rem 1rem;
-  
 }
 
 .innercontainer {
@@ -24,13 +23,12 @@
 }
 
 .title {
-  font-size: 3.125rem;
+  font-size: 2.9rem;
   font-weight: bold;
 }
 
-
 .subtitle {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   font-size: 1.25rem;
   font-weight: 400;
 }

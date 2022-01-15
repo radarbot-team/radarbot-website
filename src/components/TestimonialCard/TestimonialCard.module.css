@@ -46,7 +46,7 @@
 }
 
 .features {
-  font-family: 'Rajdhani';
+  font-family: "Rajdhani";
   font-size: 0.8125rem;
 }
 
@@ -56,7 +56,7 @@
 
 .arrow {
   margin-right: 0.2rem;
-  color: var(--main-font-color)
+  color: var(--main-font-color);
 }
 
 .footer {
@@ -93,11 +93,11 @@
 
 @media (max-width: 768px) {
   .container {
-    width: 25rem;
+    width: 20rem;
     height: 20rem;
     flex-direction: row;
   }
-  
+
   .title {
     font-size: 1.2rem;
   }
