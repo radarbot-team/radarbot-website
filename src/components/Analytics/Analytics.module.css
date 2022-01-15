@@ -4,7 +4,6 @@
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(17, 19, 48, 0.6); */
 }
 
 .header {
@@ -22,7 +21,7 @@
 }
 
 .title > span {
-  color: var(--main-blue)
+  color: var(--main-blue);
 }
 
 .subtitle {
@@ -43,9 +42,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-
   .container {
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -69,7 +66,7 @@
     display: flex;
     border-top: none;
     margin-top: 0.2rem;
-    
+
     max-width: fit-content;
   }
 
