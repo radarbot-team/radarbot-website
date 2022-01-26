@@ -5,6 +5,7 @@ import { BiArrowToTop } from 'react-icons/bi';
 import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -24,6 +25,18 @@ export function Footer() {
               A multi language advanced Discord bot for flight simmers.
             </p>
             copyright &copy; 2020
+
+            <a
+                className="flex justify-center"
+                href="https://vercel.com/?utm_source=radarbot-team&utm_campaign=oss"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Powered by
+                <span className="mx-2">
+                    <Image src="/icons/vercel.svg" alt="Vercel" width={60} height={20} />
+                </span>
+            </a>
 
           </div>
         </div>
