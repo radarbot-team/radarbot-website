@@ -24,10 +24,10 @@ export function Footer() {
             <p>
               A multi language advanced Discord bot for flight simmers.
             </p>
-            copyright &copy; 2020
+            copyright &copy; {new Date().getFullYear()} RadarBot
 
             <a
-                className="flex justify-center"
+                className={styles.sponsor}
                 href="https://vercel.com/?utm_source=radarbot-team&utm_campaign=oss"
                 target="_blank"
                 rel="noreferrer"

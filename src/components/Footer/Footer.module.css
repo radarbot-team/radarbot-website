@@ -24,7 +24,17 @@
 .logo {
   display: flex;
   cursor: pointer;
+  /* animation: spin 2s infinite; */
   transform: translateY(-130%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .copy {
@@ -80,7 +90,7 @@
   width: 4rem;
   height: 4rem;
 }
-*
+
 .container > span {
   margin-top: 4rem;
   font-weight: bold;
@@ -94,6 +104,18 @@
 
 .createdBy > a {
   color: var(--main-blue);
+}
+
+.sponsor {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  color: var(--main-font-color);
+  text-decoration: none;
+}
+
+.sponsor > span {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
