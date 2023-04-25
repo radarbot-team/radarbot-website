@@ -28,7 +28,7 @@ export function TestimonialCard(props: {
     setRgbColor(hexRgb(props.color));
     setArrowColor(props.color);
 
-
+    //
   }, [props.color])
 
   return (
