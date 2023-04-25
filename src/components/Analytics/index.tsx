@@ -19,7 +19,7 @@ export function Analytics() {
           color="#00d1de"
           description="Users using RadarBot"
           unit="K"
-          value="55"
+          value="102"
           duration="5"
         />
 
@@ -27,7 +27,7 @@ export function Analytics() {
           color="#DC52E5"
           description="Runned Commands"
           unit="K"
-          value="202"
+          value="749"
           duration="3"
         />
 
@@ -35,14 +35,14 @@ export function Analytics() {
         <AnalyticsInfo
           color="#33CC4C"
           description="Countries used"
-          value="17"
+          value="19"
           duration="3"
         />
 
         <AnalyticsInfo
           color="#F09241"
           description="Servers"
-          value="200"
+          value="339"
           duration="5"
         />
       </div>
