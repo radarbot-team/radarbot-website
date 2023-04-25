@@ -42,34 +42,26 @@ export function Footer() {
         </div>
 
         <div className={styles.itens}>
-          <Link passHref={true} href="https://bit.ly/RadarBotInvite">
-            <a target="_blank">
+          <Link target='_blank' passHref={true} href="https://bit.ly/RadarBotInvite">
               Invite RadarBot
-            </a>
           </Link>
 
           <Link passHref={false} href="/terms-privacy">
-            <a>
+        
               Terms of use and privacy policy
-            </a>
+            
           </Link>
 
-          <Link passHref={true} href="https://docs.radarbot.xyz">
-            <a target="_blank">
+          <Link target='_blank' passHref={true} href="https://docs.radarbot.xyz">
               Docs
-            </a>
           </Link>
 
-          <Link passHref={true} href="https://discord.gg/DEtGv4wUNX">
-            <a target="_blank">
+          <Link target='_blank' passHref={true} href="https://discord.gg/DEtGv4wUNX">
               Support Server
-            </a>
           </Link>
 
-          <Link passHref={true} href="https://patreon.com/andrebrito16">
-            <a target="_blank">
+          <Link target='_blank' passHref={true} href="https://patreon.com/andrebrito16">
               Donate
-            </a>
           </Link>
         </div>
 
@@ -90,7 +82,7 @@ export function Footer() {
       </div>
 
       <span className={styles.createdBy}>
-        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by <Link href="https://andrebrito.vercel.app"><a target="_blank">andrebrito16</a></Link>
+        created with <FontAwesomeIcon pulse={true} icon={faHeart} /> by <Link target='_blank' href="https://andrebrito.vercel.app">andrebrito16</Link>
       </span>
     </div>
   )

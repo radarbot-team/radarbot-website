@@ -48,6 +48,12 @@
   cursor: pointer;
 }
 
+.docs__button {
+  background-color: transparent;
+  color: #a8a8b3;
+  text-decoration: none;
+}
+
 .loginbutton {
   position: relative;
   background-color: var(--main-blue);

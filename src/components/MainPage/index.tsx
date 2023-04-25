@@ -25,9 +25,9 @@ export function MainPage() {
             <button className={styles.invitebutton} onClick={() => setOpen(true)}>
               <RiArrowDownCircleLine size="25" color="#FFF" />
               <p>
-                <a>
+              
                   Add to your Discord Server
-                </a>
+               
               </p>
             </button>
         </div>

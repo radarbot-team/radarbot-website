@@ -96,8 +96,8 @@ export function Navbar() {
             </ScrollLink>
 
 
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
-              <button>Docs</button>
+            <Link className={styles.docs__button} href="https://docs.radarbot.xyz" passHref={true}>
+              Docs
             </Link>
 
           </nav>
