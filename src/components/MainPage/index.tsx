@@ -1,11 +1,12 @@
 import { RiArrowDownCircleLine } from 'react-icons/ri';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from 'next-scroll';
 import Airplane from '../../../public/icons/airplane.svg';
 import ArrowDown from '../../../public/icons/arrowDown.svg';
 import styles from './MainPage.module.css';
 import Link from 'next/link';
 import { TransitionsModal } from '../TransitionsModal';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export function MainPage() {
   const [open, setOpen] = useState(false);
@@ -32,13 +33,13 @@ export function MainPage() {
             </button>
         </div>
         <div className={styles.airplane}>
-          <Airplane />
+          <Image src={Airplane} alt='Airplane image'/>
         </div>
       </div>
 
-      <ScrollLink spy={true} offset={-150} to="features" smooth={true}>
+      <ScrollLink offset={-150} to="features">
         <button className={styles.arrowdown}>
-          <ArrowDown />
+          <Image src={ArrowDown} alt='Arrow down'/>
         </button>
       </ScrollLink>
 

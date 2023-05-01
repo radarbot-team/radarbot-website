@@ -1,19 +1,33 @@
-import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll';
+import NextLink from 'next/link';
+import { Link } from 'next-scroll';
+import { ScrollLink } from 'react-scroll';
 import RadarLogo from '../../../public/icons/radarlogo.svg';
 import styles from './Navbar.module.css';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 
 export function Navbar() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  // const [currentSection, setCurrentSection] = useState('main');
+
+  // useEffect(() => {
+  //   // Update current section when scrolling
+  //   window.addEventListener('scroll', () => {
+  //     const currentSection = document.querySelector('.active');
+  //     console.log(currentSection)
+  //     if (currentSection) {
+  //       // setCurrentSection(currentSection.id);
+  //     }
+  //   });
+  // }, [])
 
 
   return (
     <div className={styles.container}>
-      <RadarLogo />
+      <Image src={RadarLogo} alt='radarbot-logo' />
       {
         modalIsOpen ? (
           <nav className={styles.mobilenavbar}>
@@ -75,30 +89,30 @@ export function Navbar() {
           </nav>
         ) : (
           <nav className={styles.navbar}>
-            <ScrollLink activeClass={styles.navbaractive} to="main" offset={-150} spy={true} smooth={true}>
+            <Link className={currentSection == "main" ? styles.navbaractive : ""} to="main" offset={-150} >
               Home
-            </ScrollLink>
-
-            <ScrollLink activeClass={styles.navbaractive} offset={-150} spy={true} to="features" smooth={true}>
-              Features
-            </ScrollLink>
-
-            <ScrollLink to="analytics" activeClass={styles.navbaractive} offset={-120} spy={true} smooth={true}>
-              Analytics
-            </ScrollLink>
-
-            <ScrollLink to="testimonials" offset={-200} spy={true} smooth={true} activeClass={styles.navbaractive}>
-              Testimonials
-            </ScrollLink>
-
-            <ScrollLink to="support" offset={-150} smooth={true} activeClass={styles.navbaractive} spy={true}>
-              Support
-            </ScrollLink>
-
-
-            <Link className={styles.docs__button} href="https://docs.radarbot.xyz" passHref={true}>
-              Docs
             </Link>
+
+            <Link to="features">
+              Features
+            </Link>
+
+            <Link to="analytics">
+              Analytics
+            </Link>
+
+            <Link to="testimonials">
+              Testimonials
+            </Link>
+
+            <Link to="support">
+              Support
+            </Link>
+
+
+            <NextLink className={styles.docs__button} href="https://docs.radarbot.xyz" passHref={true}>
+              Docs
+            </NextLink>
 
           </nav>
         )
