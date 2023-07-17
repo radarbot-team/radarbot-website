@@ -1,129 +1,27 @@
-import Link from 'next/link';
-import { Link as ScrollLink } from 'react-scroll';
-import RadarLogo from '../../../public/icons/radarlogo.svg';
-import styles from './Navbar.module.css';
-import { HiOutlineMenuAlt1 } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
-import { useEffect, useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
 
-
-export function Navbar() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-
+export default function Navbar() {
   return (
-    <div className={styles.container}>
-      <RadarLogo />
-      {
-        modalIsOpen ? (
-          <nav className={styles.mobilenavbar}>
-            <ScrollLink activeClass={styles.mobilenavbaractive}
-              onClick={() => setModalIsOpen((prev) => !prev)}
-              to="main"
-              offset={-150}
-              spy={true}
-              smooth={true}>
-              Home
-            </ScrollLink>
+    <div className="w-screen flex items-center justify-between p-4 border-solid border-b-[1px] border-[#10afba]">
+      <Image
+        src="/images/icons/radarlogo.svg"
+        width={47}
+        height={47}
+        alt="radar logo" />
 
-            <ScrollLink
-              activeClass={styles.mobilenavbaractive}
-              onClick={() => setModalIsOpen((prev) => !prev)}
-              offset={-150}
-              spy={true}
-              to="features"
-              smooth={true}>
-              Features
-            </ScrollLink>
+      <div className="flex gap-4 text-white">
+        <Link href="">home</Link>
+        <Link href="">Features</Link>
+        <Link href="">Analytics</Link>
+        <Link href="">Testimonials</Link>
+        <Link href="">Support</Link>
+        <Link href="">Docs</Link>
+      </div>
 
-            <ScrollLink
-              to="analytics"
-              activeClass={styles.mobilenavbaractive}
-              onClick={() => setModalIsOpen((prev) => !prev)}
-              offset={-50}
-              spy={true}
-              smooth={true}>
-              Analytics
-            </ScrollLink>
-
-            <ScrollLink
-              to="testimonials"
-              spy={true}
-              onClick={() => setModalIsOpen((prev) => !prev)}
-              offset={-150}
-              activeClass={styles.mobilenavbaractive}
-              smooth={true} >
-              Testimonials
-            </ScrollLink>
-
-            <ScrollLink
-              to="support"
-              spy={true}
-              onClick={() => setModalIsOpen((prev) => !prev)}
-              offset={-150}
-              activeClass={styles.mobilenavbaractive}
-              smooth={true}>
-              Support
-            </ScrollLink>
-
-
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
-              <button>Docs</button>
-            </Link>
-
-
-          </nav>
-        ) : (
-          <nav className={styles.navbar}>
-            <ScrollLink activeClass={styles.navbaractive} to="main" offset={-150} spy={true} smooth={true}>
-              Home
-            </ScrollLink>
-
-            <ScrollLink activeClass={styles.navbaractive} offset={-150} spy={true} to="features" smooth={true}>
-              Features
-            </ScrollLink>
-
-            <ScrollLink to="analytics" activeClass={styles.navbaractive} offset={-120} spy={true} smooth={true}>
-              Analytics
-            </ScrollLink>
-
-            <ScrollLink to="testimonials" offset={-200} spy={true} smooth={true} activeClass={styles.navbaractive}>
-              Testimonials
-            </ScrollLink>
-
-            <ScrollLink to="support" offset={-150} smooth={true} activeClass={styles.navbaractive} spy={true}>
-              Support
-            </ScrollLink>
-
-
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
-              <button>Docs</button>
-            </Link>
-
-          </nav>
-        )
-      }
-
-      <button onClick={() => alert("Soon...")} className={styles.loginbutton}>
-        Login
-      </button>
-      {
-        modalIsOpen ? (
-          <IoClose
-            className={styles.close}
-            onClick={() => setModalIsOpen((prev) => !prev)}
-            size="2rem"
-          />
-        ) : (
-          <HiOutlineMenuAlt1
-            className={styles.mobilebutton}
-            onClick={() => setModalIsOpen((prev) => !prev)}
-            size="2rem" />
-
-        )
-      }
+      
+      <Link href="" className="bg-main-blue hover:bg-main-blue-hover px-8 p-2 rounded-xl font-bold text-white text-xl shadow ">Login</Link>
 
     </div>
   )
-
 }

@@ -1,22 +1,20 @@
-import styles from './Features.module.css'
-import { FeatureCard } from '../FeatureCard'
+import FeaturesCard from "./FeaturesCard";
 
-export function Features() {
+
+export default function Features() {
   return (
-    <div id="features" className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.title}>
+
+    <div className="mt-[8rem] flex flex-col justify-center">
+      <div className="p-8 mt-8 ml-8 mb-6 flex flex-col justify-center lg:justify-between lg:flex-row">
+        <div className="text-[3.125rem] max-w-[720px]  lg:max-w-3xl lg:max-h-full">
           <strong>The ecosystem behind RadarBot</strong>
         </div>
-        <div className={styles.description}>
-          <p>
-            Meet some of the many
-            features available in the Bot.
-          </p>
+        <div className="max-w-[16rem] text-base mt-4 ml-20 lg:border-t-2 border-t-main-blue ">
+          <p>Meet some of the many features available in the Bot.</p>
         </div>
       </div>
-      <div className={styles.features}>
-        <FeatureCard
+      <div className="flex flex-col p-24 md:p-1 md:flex-row justify-between">
+        <FeaturesCard
           color="#33CC4A"
           icon="language"
           title="Multi-Language Support"
@@ -25,15 +23,14 @@ export function Features() {
             "English",
             "Portuguese",
             "Spanish",
-            "French"
-          ]}
+            "French"]}
           footer="Soon Italian will be added to the list!"
         />
 
-        <FeatureCard
+        <FeaturesCard
           color="#DC52E5"
           icon="flightutilities"
-          title="Flight Utilities"
+          title="light Utilities"
           description="The best tools for virtual flights!"
           features={[
             "Metar & TAF",
@@ -44,7 +41,7 @@ export function Features() {
           footer="We constantly add new features, stay tunned!"
         />
 
-        <FeatureCard
+        <FeaturesCard
           color="#F09242"
           icon="screenshots"
           title="Screenshot System"

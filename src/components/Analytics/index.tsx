@@ -1,28 +1,21 @@
-import styles from './Analytics.module.css';
-import { AnalyticsInfo } from '../AnalyticsInfo';
+import AnalyticsInfo from "./AnalyticsInfo";
 
-
-export function Analytics() {
+export default function Analytics() {
   return (
-    <div id="analytics" className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.subtitle}>
-          <p>We have numbers and more numbers... All around the world. </p>
-        </div>
-        <span className={styles.title}>
-          Numbers can prove that people loves <span>RadarBot</span> ❤
-        </span>
+    <div className="flex flex-col lg:p-20">
+      <div className="p-2 flex flex-col xl:flex-row-reverse xl:justify-between  items-center justify-start">
+        <h2 className="max-w-2xl font-bold max-h-screen text-4xl font text-main-font-color">Numbers can prove that people loves <span className="text-main-blue">RadarBot</span>❤</h2>
+        <p className="mt-2 max-w-md lg:max-w-[16rem] lg:border-t-2 lg:border-main-blue w-">We have numbers and more numbers... All around the world.</p>
       </div>
-      <div className={styles.analytics}>
-
+      <div className="flex flex-col items-center lg:flex-row">
         <AnalyticsInfo
           color="#00d1de"
           description="Users using RadarBot"
           unit="K"
           value="55"
           duration="5"
-        />
 
+        />
         <AnalyticsInfo
           color="#DC52E5"
           description="Runned Commands"
@@ -30,8 +23,6 @@ export function Analytics() {
           value="202"
           duration="3"
         />
-
-
         <AnalyticsInfo
           color="#33CC4C"
           description="Countries used"
@@ -48,4 +39,5 @@ export function Analytics() {
       </div>
     </div>
   )
+
 }
