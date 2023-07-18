@@ -1,5 +1,7 @@
 import Analytics from '@/components/Analytics';
 import Features from '@/components/Features';
+import Support from '@/components/Suppot';
+import Testimonials from '@/components/Testimonials';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,15 +18,15 @@ export default function Home({ params }: Props) {
 
   return (
     <div className="p-0">
-      <div className="flex justify-between">
+      <div className="flex justify-between max-w-screen">
         <div className="w-full">
           <div className="flex justify-center text-lg mb-8 lg:justify-start lg:pl-20 pt-20 mt-0 lg:mb-0 ">  👋 Hey, Welcome</div>
 
-          <div className="max-w-[420]  text-6xl font-bold pl-7 mr-40 mb-20 lg:pl-20 lg:mb-1 lg:text-7xl ">
+          <div className="max-w-[420] text-6xl font-bold pl-7 mr-40 mb-20 lg:pl-20 lg:mb-1 lg:text-7xl ">
             The <span className="text-main-blue">Next Generation</span> of Utilities for Flight Simmers
           </div>
 
-          <div className="pl-7 font-bold lg:pl-20 ">
+          <div className="max-w-[420] pl-7 font-bold lg:pl-20 ">
             A multi language advanced Discord bot Made by <span className="text-main-blue" >Flight Simmers</span> for  <span className="text-main-blue">Flight Simmers</span>
           </div>
 
@@ -51,6 +53,8 @@ export default function Home({ params }: Props) {
       <div>
        <Features /> 
        <Analytics/>
+       <Testimonials/>
+       <Support/>
       </div>
     </div>
   )

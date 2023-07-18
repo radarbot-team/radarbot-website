@@ -4,8 +4,8 @@ import FeaturesCard from "./FeaturesCard";
 export default function Features() {
   return (
 
-    <div className="mt-[8rem] flex flex-col justify-center">
-      <div className="p-8 mt-8 ml-8 mb-6 flex flex-col justify-center lg:justify-between lg:flex-row">
+    <div className="mt-[8rem] max-w-screen flex flex-col justify-center">
+      <div className="p-8 mt-8 ml-8 mb-6 flex w-full flex-col justify-center lg:justify-between lg:flex-row">
         <div className="text-[3.125rem] max-w-[720px]  lg:max-w-3xl lg:max-h-full">
           <strong>The ecosystem behind RadarBot</strong>
         </div>
@@ -13,7 +13,7 @@ export default function Features() {
           <p>Meet some of the many features available in the Bot.</p>
         </div>
       </div>
-      <div className="flex flex-col p-24 md:p-1 md:flex-row justify-between">
+      <div className="flex flex-col p-4 lg:p-20 md:p-1 md:flex-row justify-between">
         <FeaturesCard
           color="#33CC4A"
           icon="language"

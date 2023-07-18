@@ -7,7 +7,7 @@ export default function Analytics() {
         <h2 className="max-w-2xl font-bold max-h-screen text-4xl font text-main-font-color">Numbers can prove that people loves <span className="text-main-blue">RadarBot</span>❤</h2>
         <p className="mt-2 max-w-md lg:max-w-[16rem] lg:border-t-2 lg:border-main-blue w-">We have numbers and more numbers... All around the world.</p>
       </div>
-      <div className="flex flex-col items-center lg:flex-row">
+      <div className="flex m-auto flex-col items-center lg:flex-row">
         <AnalyticsInfo
           color="#00d1de"
           description="Users using RadarBot"

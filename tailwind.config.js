@@ -27,6 +27,8 @@ module.exports = {
       'feature-card-green': '#33cc4c',
       'main-blue-hover': '#10afba',
       'main-grey': '#8e8e8e',
+      'main-teste1': '#E08537',
+      'main-bg': '#01193C'
 
     },
 extend: {
