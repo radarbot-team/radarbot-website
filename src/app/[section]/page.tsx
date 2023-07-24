@@ -1,5 +1,6 @@
 import Analytics from '@/components/Analytics';
 import Features from '@/components/Features';
+import Footer from '@/components/Footer';
 import Support from '@/components/Suppot';
 import Testimonials from '@/components/Testimonials';
 
@@ -55,6 +56,9 @@ export default function Home({ params }: Props) {
        <Analytics/>
        <Testimonials/>
        <Support/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )

@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing:border-box
 }
 body {
   background-color: var(--background);
@@ -45,4 +46,10 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background);
+}
+body,
+input,
+textarea,
+button {
+  font: 400 16px 'Roboto', sans-serif;
 }
