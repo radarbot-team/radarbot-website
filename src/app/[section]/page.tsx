@@ -15,8 +15,6 @@ interface Props {
 }
 
 export default function Home({ params }: Props) {
-  console.log(params.section)
-
   return (
     <div className="p-0">
       <div className="flex justify-between max-w-screen">
