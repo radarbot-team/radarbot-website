@@ -1,4 +1,4 @@
-import { Quotes } from '@/components/icons/Quotes';
+import { Quotes } from '@/components/Icons/Quotes';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';

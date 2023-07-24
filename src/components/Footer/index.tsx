@@ -1,8 +1,7 @@
 
-import { LogoRadarBot } from "../icons/LogoRadarBot";
+import { LogoRadarBot } from "../Icons/LogoRadarBot";
 import Image from "next/image";
-/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons'; */
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll'
 import Link from "next/link";
 import { BiArrowToTop } from 'react-icons/bi';

@@ -1,4 +1,4 @@
-import ArrowSvgComponent from '@/components/icons/Arrow';
+import ArrowSvgComponent from '@/components/Icons/Arrow';
 import { IoCompassOutline, IoImageOutline, IoLanguageOutline, } from 'react-icons/io5';
 /* import { ArrowRight } from 'lucide-react' */
 export default function FeaturesCard(props: {
