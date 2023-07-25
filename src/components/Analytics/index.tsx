@@ -1,4 +1,4 @@
-import AnalyticsInfo from "./AnalyticsInfo";
+import { AnalyticsInfo } from "./AnalyticsInfo";
 
 export default function Analytics() {
   return (
@@ -9,6 +9,8 @@ export default function Analytics() {
       </div>
       <div className="flex m-auto flex-col items-center lg:flex-row">
         <AnalyticsInfo
+        
+          colorFrom="from-[#00d1de]"
           color="#00d1de"
           description="Users using RadarBot"
           unit="K"
@@ -17,6 +19,8 @@ export default function Analytics() {
 
         />
         <AnalyticsInfo
+          colorFrom="from-[#DC52E5]"
+        
           color="#DC52E5"
           description="Runned Commands"
           unit="K"
@@ -24,6 +28,8 @@ export default function Analytics() {
           duration="3"
         />
         <AnalyticsInfo
+          colorFrom="from-[#33CC4C]"
+        
           color="#33CC4C"
           description="Countries used"
           value="17"
@@ -31,6 +37,8 @@ export default function Analytics() {
         />
 
         <AnalyticsInfo
+          colorFrom="from-[#F09241]"
+          
           color="#F09241"
           description="Servers"
           value="200"

@@ -9,8 +9,8 @@ import { BiArrowToTop } from 'react-icons/bi';
 export default function Footer() {
   return (
     <div className="flex flex-col justify-between items-center md:py-12 md:px-40 mt-20  ">
-      <div className="w-full flex ml-8 flex-row justify-between">
-        <div className="flex flex-row">
+      <div className="w-full flex ml-8 justify-center items-center md:flex-row flex-col md:justify-between">
+        <div className="flex flex-row mb-8">
           <div className="flex flex-row ">
             <Link passHref={true} target="_blank" href="/">
               <LogoRadarBot className="hidden lg:block" />
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         {/* 2/3 */}
-        <div className="flex flex-col justify-between mb-4 text-lg ">
+        <div className="flex flex-col justify-between mb-4 text-lg pl-20 md:pl-0 ">
           <Link passHref={true}  className="hover:text-main-blue-hover" href="https://bit.ly/RadarBotInvite">
 
             Invite RadarBot
@@ -78,8 +78,8 @@ export default function Footer() {
               Scroll To Top
             </span>
           </div>
-          <div className="font-extralight mt-4 max-w-[10rem]">
-            <span className="text-base font-normal font-serif roboto">
+          <div className="mt-4 max-w-[10rem]">
+            <span className="text-base font-extralight">
               UI By: Carolina Eguchi and Ruy Monteiro
             </span>
           </div>

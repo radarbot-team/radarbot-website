@@ -28,8 +28,9 @@ module.exports = {
       'main-blue-hover': '#10afba',
       'main-grey': '#8e8e8e',
       'main-teste1': '#E08537',
-      'main-bg': '#01193C'
-
+      'main-bg': '#01193C',
+      'blue-dark': '#45488a',
+      'gray': '#a8a8b3',
     },
 extend: {
 

@@ -29,8 +29,8 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="p-5 shadow md:flex  md:items-center md:justify-between">
-        {/*  <div className=" flex items-center justify-between p-4 border-solid border-b-[1px] border-[#10afba]"> */}
+      <nav className="p-5 shadow md:flex  md:items-center md:justify-between border-b border-blue-dark">
+        {/*  <div className=" flex items-center justify-between p-4 border-solid -[1px] border-[#10afba]"> */}
         <div className="flex justify-between items-center">
           <span className="text-2xl font-[Poppins] cursor-pointer ">
             <Image
@@ -49,26 +49,26 @@ export default function Navbar() {
         left-0 md:w-auto py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
 
           <li className="mx-4 my-6 md:my-0 ">
-            <Link href="" className="text-main-font-color text-xl hover:text-main-blue-hover duration-500">home</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Home</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-font-color hover:text-main-blue-hover duration-500 ">Features</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500 ">Features</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-font-color text-xl hover:text-main-blue-hover duration-500">Analytics</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Analytics</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-font-color text-xl hover:text-main-blue-hover duration-500">Testimonials</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Testimonials</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-font-color text-xl hover:text-main-blue-hover duration-500">Support</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Support</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-font-color text-xl hover:text-main-blue-hover duration-500">Docs</Link>
+            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>
           </li>
-          <Link href="" className="  bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
-
+          <Link href="" className=" md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
         </ul>
+        <Link href="" className=" hidden md:block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
       </nav>
     </div>
   );

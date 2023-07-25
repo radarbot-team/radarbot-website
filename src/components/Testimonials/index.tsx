@@ -1,4 +1,4 @@
-import TestimonialsCard from "./TestimonialCard";
+import { TestimonialsCard } from "./TestimonialCard";
 import PernaDoVentoLogo from '../../../public/images/pernaDoVentoLogo.png';
 import AtcSimulationLogo from '../../../public/images/atcSimulationLogo.jpg';
 export default function Testimonials() {
@@ -14,7 +14,9 @@ export default function Testimonials() {
       </div>
       <div className="flex flex-col h-full p-8 items-center justify-center md:flex-row">
         <TestimonialsCard
-          color="main-blue"
+          colorQuotes="text-main-blue"
+          color="bg-main-blue"
+          color2="from-main-blue"
           title="Using **RadarBot** on my server was the right choice."
           description="All the tools used for the flight simulation are available in it, as well as some other amazing features like polls for best simulator screenshots that help to integrate more with the server community."
           name="Flávio Oliveira"
@@ -23,7 +25,9 @@ export default function Testimonials() {
           link="https://youtube.com/pernadovento"
         />
         <TestimonialsCard
-          color="main-blue"
+          colorQuotes="text-main-teste1"
+          color2="from-main-teste1"
+          color="bg-main-teste1"
           title="RadarBot is the best tool you can have on your server"
           description="What I like most about RadarBot is the support that the developers give. It's a BOT made by Brazilians who follow the daily life of the community! So they can see the demands of users. Developing and improving every day this amazing BOT! RadarBot is the best tool you can have on your server! I recommend!"
           name="Juvenal Gomes"
