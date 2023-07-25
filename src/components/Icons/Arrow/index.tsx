@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function ArrowSvgComponent(props: React.SVGProps<SVGSVGElement>) {
+export function ArrowSvgComponent(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={27}

@@ -1,4 +1,4 @@
-import FeaturesCard from "./FeaturesCard";
+import { FeaturesCard } from "./FeaturesCard";
 
 
 export default function Features() {
@@ -30,7 +30,7 @@ export default function Features() {
         <FeaturesCard
           color="#DC52E5"
           icon="flightutilities"
-          title="light Utilities"
+          title="Flight Utilities"
           description="The best tools for virtual flights!"
           features={[
             "Metar & TAF",
