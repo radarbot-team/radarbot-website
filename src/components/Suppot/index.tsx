@@ -1,7 +1,7 @@
 "use client"
 import { Fade, Bounce } from 'react-awesome-reveal';
-import { BackgroundSupport } from '../Icons/BackgroundSupport';
-import { LogoRadarBot } from '../Icons/LogoRadarBot';
+import { BackgroundSupport } from '../Icons/background-support';
+import { LogoRadarBot } from '../Icons/logo-radarbot';
 
 export default function Support() {
   return (

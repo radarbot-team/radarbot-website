@@ -1,5 +1,5 @@
 
-import { LogoRadarBot } from "../Icons/LogoRadarBot";
+import { LogoRadarBot } from "../Icons/logo-radarbot";
 import Image from "next/image";
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Link as ScrollLink } from 'react-scroll'
