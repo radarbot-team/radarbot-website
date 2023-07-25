@@ -16,8 +16,8 @@ export default function TestimonialsCard(props: {
   position: string
 }) {
   return (
-    <div className={`rounded-xl lg:max-w-[320px] max-h-[563px] md:max-w-[220px] md:mx-auto bg-gradient-to-r p-[3px]  bg-${props.color} p-[3px] mb-6`}>
-      <div className="flex flex-col justify-between h-full bg-[#1a1c48] text-white rounded-lg p-4">
+    <div className={`rounded-xl relative lg:max-w-[20rem] max-h-[28rem] md:max-w-[220px] md:min-h-[30rem] md:mx-auto bg-gradient-to-r p-[3px]  bg-${props.color} p-[3px] mb-6`}>
+      <div className="flex flex-col justify-between bg-[#1a1c48] text-white rounded-lg p-4">
         <div className="w-12 h-12 rounded"> <Quotes></Quotes> </div>
         <div className="font-light text-base">
           <ReactMarkdown className="" >

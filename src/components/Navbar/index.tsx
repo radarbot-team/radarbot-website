@@ -15,9 +15,11 @@ export default function Navbar() {
     const list = document.querySelector('ul');
     if (list) {
       if (menuOpen) {
+        list.classList.remove('hidden')
         list.classList.add('top-[80px]', 'opacity-100');
         list.classList.remove('opacity-0');
       } else {
+        list.classList.add('hidden')
         list.classList.remove('top-[80px]', 'opacity-100');
         list.classList.add('opacity-0');
       }
@@ -39,11 +41,11 @@ export default function Navbar() {
               alt="radar logo" />
           </span>
           <span className="text-3xl text-main-blue cursor-pointer mx-2 md:hidden block">
-            <AiOutlineMenu name="menu" onClick={Menu}/>
+            <AiOutlineMenu name="menu" onClick={Menu} />
           </span>
         </div>
 
-        <ul className="md:flex md:items-center md:justify-between z-[-1] md:z-auto md:static absolute'
+        <ul className="flex flex-col items-center md:flex md:flex-row md:items-center md:justify-between z-[-1] md:z-auto md:static absolute'
         left-0 md:w-auto py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
 
           <li className="mx-4 my-6 md:my-0 ">

@@ -39,25 +39,21 @@ export default function Home({ params }: Props) {
 
         </div>
 
-        <div>
-
           <Image
             className="mt-6 h-full hidden 2xl:block"
             alt="foto_do_avião_em_branco"
             src="/images/icons/airplane.svg"
             width={900}
             height={900}></Image>
-        </div>
+
       </div>
-      <div>
        <Features /> 
        <Analytics/>
        <Testimonials/>
        <Support/>
-      </div>
-      <div>
-        <Footer/>
-      </div>
+
+      <Footer/>
+
     </div>
   )
 }

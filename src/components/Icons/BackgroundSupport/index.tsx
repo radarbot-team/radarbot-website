@@ -3,8 +3,6 @@ import * as React from "react"
 export function BackgroundSupport(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width={1297}
-      height={341}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
