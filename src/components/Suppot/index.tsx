@@ -13,7 +13,7 @@ export default function Support() {
 
           <h2 className='text-2xl font-semibold'>Questions or need help?</h2>
           <button className="bg-main-blue hover:bg-main-blue-hover flex items-center justify-center text-lg font-bold w-72 h-16 border-none rounded-[10px] cursor-pointer transition duration-300 ease-in-out ">
-            <a href="https://discord.gg/DEtGv4wUNX" target="_blank" rel="noreferrer">Join Support Server</a>
+            <a href="https://links.radarbot.xyz/support-server" target="_blank" rel="noreferrer">Join Support Server</a>
           </button>
         </div>
       </Fade>

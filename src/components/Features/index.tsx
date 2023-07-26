@@ -9,7 +9,7 @@ export default function Features() {
         <div className="text-[3.125rem] max-w-[720px]  lg:max-w-3xl lg:max-h-full">
           <strong>The ecosystem behind RadarBot</strong>
         </div>
-        <div className="max-w-[16rem] text-base mt-4 ml-20 lg:border-t-2 border-t-main-blue ">
+        <div className="mr-20 max-w-[16rem] text-base mt-4 ml-20 lg:border-t-2 border-t-main-blue ">
           <p>Meet some of the many features available in the Bot.</p>
         </div>
       </div>

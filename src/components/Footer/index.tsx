@@ -73,10 +73,13 @@ export default function Footer() {
         </div>
         <div>
         <div className="flex flex-col  text-main-blue hover:main-blue-hover" >
+          <Link scroll href="home/#home">
+          
             <BiArrowToTop className="w-20 h-20"/>
             <span>
               Scroll To Top
             </span>
+          </Link>
           </div>
           <div className="mt-4 max-w-[10rem]">
             <span className="text-base font-extralight">
@@ -85,10 +88,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <span className="flex flex-row justify-between text-xl font-extrabold  ">
-      created with 
-        {/* <FontAwesomeIcon pulse={true} icon={faHeart} /> */} by 
-        <Link target="_blank" className="text-main-blue ml-1 hover:text-main-blue-hover "href="https://andrebrito.vercel.app ">  andrebrito16</Link>
+      <span className="flex flex-row gap-2 items-center text-xl font-extrabold  ">
+      created with by 
+        
+        <Link target="_blank" className="text-main-blue ml-1 hover:text-main-blue-hover "href="https://andrefb.tech">André Brito</Link>
+          <span>and</span>
+        <Link target="_blank" className="text-main-blue ml-1 hover:text-main-blue-hover "href="https://portifolio.emanuelmaia.site">Emanuel Maia</Link> 
       </span>
     </div>
   )

@@ -17,42 +17,46 @@ interface Props {
 export default function Home({ params }: Props) {
   return (
     <div id="home" className="p-0 pt-8">
-      <div className="flex justify-between h-screen max-w-screen">
-        <div className="w-full">
-          <div className="flex justify-center text-lg mb-8 lg:justify-start lg:pl-20 pt-20 mt-0 lg:mb-0 ">  👋 Hey, Welcome</div>
+      <div className="flex flex-col justify-between h-screen max-w-screen">
+        <div className='flex'>
+          <div className="w-full">
+            <div className="flex justify-center text-lg mb-8 lg:justify-start lg:pl-20 pt-20 mt-0 lg:mb-0 ">  👋 Hey, Welcome</div>
 
-          <div className="text-7xl pl-7 mr-40 mb-28 lg:pl-20 lg:mb-1 lg:text-7xl font-semibold">
-            The <span className="text-main-blue">Next Generation</span> of Utilities for Flight Simmers
-          </div>
+            <div className="text-7xl pl-7 mr-40 mb-28 lg:pl-20 lg:mb-1 lg:text-7xl font-semibold">
+              The <span className="text-main-blue">Next Generation</span> of Utilities for Flight Simmers
+            </div>
 
-          <div className="mt-8 pl-7 font-bold lg:pl-20 ">
-            A multi language advanced Discord bot Made by <span className="text-main-blue" >Flight Simmers</span> for  <span className="text-main-blue">Flight Simmers</span>
-          </div>
+            <div className="mt-8 pl-7 font-bold lg:pl-20 ">
+              A multi language advanced Discord bot Made by <span className="text-main-blue" >Flight Simmers</span> for  <span className="text-main-blue">Flight Simmers</span>
+            </div>
 
-          <div className="flex items-center p-12 lg:p-20">
-            <Link href=""
-              className=" flex flex-row bg-main-blue w-72 h-14 hover:bg-main-blue-hover 
+            <div className="flex items-center p-12 lg:p-20">
+              <Link href=""
+                className=" flex flex-row bg-main-blue w-72 h-14 hover:bg-main-blue-hover 
               items-center justify-center text-base mt-8 mb-2 lg:mt-[-60px] 
-               rounded-[10px] font-bold text-white shadow ease-in-out duration-500">
-              <span >
-                <BsArrowDownCircle size={25} className="pr-2" />
-              </span> Add to your Discord Server</Link>
+              rounded-[10px] font-bold text-white shadow ease-in-out duration-500">
+                <span >
+                  <BsArrowDownCircle size={25} className="pr-2" />
+                </span> Add to your Discord Server</Link>
+            </div>
+
           </div>
-
-        </div>
-
           <Image
-            className="translate-y-[-10rem] h-full hidden 2xl:block"
+            className="translate-y-[-5rem] h-full hidden xl:block"
             alt="foto_do_avião_em_branco"
             src="/images/icons/airplane.svg"
-            width={700}
-            height={900}></Image>
+            width={500}
+            height={700}></Image>
+        </div>
+        <Link className="md:flex mb-16 justify-center hidden animate-bounce items-center" scroll href="/features#features">
+          <Image src="/images/icons/arrowDown.svg" width={50} height={50} alt='Arrow down' />
+        </Link>
 
       </div>
-       <Features /> 
-       <Analytics/>
-       <Testimonials/>
-       <Support/>
+      <Features />
+      <Analytics />
+      <Testimonials />
+      <Support />
     </div>
   )
 }

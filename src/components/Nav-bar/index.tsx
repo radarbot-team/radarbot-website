@@ -46,14 +46,16 @@ export default function Navbar() {
     <div className="fixed w-full z-20  bg-main-bg">
       <nav className="p-1 shadow md:flex md:items-center md:justify-between border-b border-blue-dark">
         <div className="flex justify-between items-center">
-          <span className="text-2xl font-[Poppins] cursor-pointer ">
+          <Link scroll href="home/#home" className="text-2xl font-[Poppins] cursor-pointer ">
             <Image
+              
+              
               className="h-10 inline"
               src="/images/icons/radarlogo.svg"
               width={47}
               height={47}
               alt="radar logo" />
-          </span>
+          </Link>
           <span className="text-3xl text-main-blue cursor-pointer mx-2 md:hidden block">
             <AiOutlineMenu name="menu" onClick={Menu} />
           </span>
@@ -80,9 +82,9 @@ export default function Navbar() {
           <li className="mx-4 my-6 md:my-2 ">
             <Link href={"https://docs.radarbot.xyz"} target="__blank" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>
           </li>
-          <Link href="" className="md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
+          <Link href={"https://links.radarbot.xyz/invite"} target="__blank" className="md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Invite</Link>
         </ul>
-        <Link href="" className="hidden md:block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
+        <Link href={"https://links.radarbot.xyz/invite"}target="__blank" className="hidden md:block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Invite</Link>
       </nav>
     </div>
   );
