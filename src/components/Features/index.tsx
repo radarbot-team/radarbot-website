@@ -4,7 +4,7 @@ import { FeaturesCard } from "./FeaturesCard";
 export default function Features() {
   return (
 
-    <div className="mt-[8rem] max-w-screen flex flex-col justify-center">
+    <div id="features" className="mt-[8rem] max-w-screen flex flex-col justify-center">
       <div className="p-8 mt-8 ml-8 mb-6 flex w-full flex-col justify-center lg:justify-between lg:flex-row">
         <div className="text-[3.125rem] max-w-[720px]  lg:max-w-3xl lg:max-h-full">
           <strong>The ecosystem behind RadarBot</strong>

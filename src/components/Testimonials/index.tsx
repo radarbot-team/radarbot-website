@@ -3,7 +3,7 @@ import PernaDoVentoLogo from '../../../public/images/pernaDoVentoLogo.png';
 import AtcSimulationLogo from '../../../public/images/atcSimulationLogo.jpg';
 export default function Testimonials() {
   return (
-    <div className="p-2 lg:p-20 mt-28 flex flex-col  ">
+    <div id="testimonials" className="p-2 lg:p-20 mt-28 flex flex-col  ">
       <div className="flex flex-col md:flex-row justify-between">
         <div className="text-5xl max-w-2xl font-bold mb-4 p-2" >
           <p>🌏 Loved by people across the globe</p>

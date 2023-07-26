@@ -43,7 +43,7 @@ export default function Home({ params }: Props) {
         </div>
 
           <Image
-            className="translate-y-[-10rem] h-full hidden 2xl:block"
+            className="translate-y-[-10rem] h-full hidden 2xl:hidden"
             alt="foto_do_avião_em_branco"
             src="/images/icons/airplane.svg"
             width={700}

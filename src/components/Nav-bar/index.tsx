@@ -49,22 +49,22 @@ export default function Navbar() {
         left-0 md:w-auto py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
 
           <li className="mx-4 my-6 md:my-0 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Home</Link>
+            <Link href={"#"} className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Home</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500 ">Features</Link>
+            <Link scroll href="#features" className="text-main-grey text-xl hover:text-main-blue-hover duration-500 ">Features</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Analytics</Link>
+            <Link scroll href="#analytics" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Analytics</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Testimonials</Link>
+            <Link scroll href="#testimonials" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Testimonials</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Support</Link>
+            <Link scroll href="#support" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Support</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link href="" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>
+            <Link href={"https://docs.radarbot.xyz"} target="__blank" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>
           </li>
           <Link href="" className=" md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
         </ul>
