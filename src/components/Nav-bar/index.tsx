@@ -3,9 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathName = usePathname();
+  const router = useRouter();
+
+  function generateButtonClassName(path: string): string {
+    const inactiveSectionButton = "text-main-grey text-xl hover:text-main-blue-hover duration-500"
+    const activeSectionButton = "text-white text-xl hover:text-main-blue-hover border-b-[2px] border-main-blue box-border duration-500"
+    return pathName.includes(path) ? activeSectionButton : inactiveSectionButton;
+  }
+
+  useEffect(() => {
+    router.replace(pathName, {
+      scroll: false,
+    });
+  }, [pathName, router]);
 
   const Menu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
@@ -47,20 +62,20 @@ export default function Navbar() {
         <ul className="flex flex-col items-center md:flex md:flex-row md:items-center md:justify-between z-[-1] md:z-auto md:static absolute'
         left-0 md:w-auto py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
 
-          <li className="mx-4 my-6 md:my-0 ">
-            <Link href={"#"} className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Home</Link>
+          <li className="mx-4 my-6 md:my-0 h-full">
+            <Link href={"/home#home"} className={generateButtonClassName('home')}>Home</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link scroll href="#features" className="text-main-grey text-xl hover:text-main-blue-hover duration-500 ">Features</Link>
+            <Link scroll href="/features#features" className={generateButtonClassName('features')}>Features</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link scroll href="#analytics" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Analytics</Link>
+            <Link scroll href="/analytics#analytics" className={generateButtonClassName('analytics')}>Analytics</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link scroll href="#testimonials" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Testimonials</Link>
+            <Link scroll href="/testimonials#testimonials" className={generateButtonClassName('testimonials')}>Testimonials</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
-            <Link scroll href="#support" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Support</Link>
+            <Link scroll href="/support#support" className={generateButtonClassName('support')}>Support</Link>
           </li>
           <li className="mx-4 my-6 md:my-2 ">
             <Link href={"https://docs.radarbot.xyz"} target="__blank" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>

@@ -16,7 +16,7 @@ interface Props {
 
 export default function Home({ params }: Props) {
   return (
-    <div className="p-0 pt-8">
+    <div id="home" className="p-0 pt-8">
       <div className="flex justify-between h-screen max-w-screen">
         <div className="w-full">
           <div className="flex justify-center text-lg mb-8 lg:justify-start lg:pl-20 pt-20 mt-0 lg:mb-0 ">  👋 Hey, Welcome</div>
