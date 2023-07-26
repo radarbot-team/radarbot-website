@@ -1,7 +1,6 @@
 import Analytics from '@/components/Analytics';
 import { ReactDOM } from 'react';
 import Features from '@/components/Features';
-import Footer from '@/components/Footer';
 import Support from '@/components/Suppot';
 import Testimonials from '@/components/Testimonials';
 
@@ -17,7 +16,7 @@ interface Props {
 
 export default function Home({ params }: Props) {
   return (
-    <div className="p-0">
+    <div className="p-0 pt-8">
       <div className="flex justify-between h-screen max-w-screen">
         <div className="w-full">
           <div className="flex justify-center text-lg mb-8 lg:justify-start lg:pl-20 pt-20 mt-0 lg:mb-0 ">  👋 Hey, Welcome</div>
@@ -43,7 +42,7 @@ export default function Home({ params }: Props) {
         </div>
 
           <Image
-            className="translate-y-[-10rem] h-full hidden 2xl:hidden"
+            className="translate-y-[-10rem] h-full hidden 2xl:block"
             alt="foto_do_avião_em_branco"
             src="/images/icons/airplane.svg"
             width={700}
@@ -54,9 +53,6 @@ export default function Home({ params }: Props) {
        <Analytics/>
        <Testimonials/>
        <Support/>
-
-      <Footer/>
-
     </div>
   )
 }

@@ -1,4 +1,5 @@
 
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Nav-bar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -20,7 +21,8 @@ export default function RootLayout({
       
       <body className="flex flex-col ">
         <Navbar/>
-        {children}
+          {children}
+        <Footer/>
       </body>
     </html>
   )

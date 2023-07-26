@@ -28,9 +28,8 @@ export default function Navbar() {
 
 
   return (
-    <div>
-      <nav className="p-5 shadow md:flex  md:items-center md:justify-between border-b border-blue-dark">
-        {/*  <div className=" flex items-center justify-between p-4 border-solid -[1px] border-[#10afba]"> */}
+    <div className="fixed w-full z-20  bg-main-bg">
+      <nav className="p-1 shadow md:flex md:items-center md:justify-between border-b border-blue-dark">
         <div className="flex justify-between items-center">
           <span className="text-2xl font-[Poppins] cursor-pointer ">
             <Image
@@ -46,7 +45,7 @@ export default function Navbar() {
         </div>
 
         <ul className="flex flex-col items-center md:flex md:flex-row md:items-center md:justify-between z-[-1] md:z-auto md:static absolute'
-        left-0 md:w-auto py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
+        left-0 md:w-auto py-2 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
 
           <li className="mx-4 my-6 md:my-0 ">
             <Link href={"#"} className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Home</Link>
@@ -66,9 +65,9 @@ export default function Navbar() {
           <li className="mx-4 my-6 md:my-2 ">
             <Link href={"https://docs.radarbot.xyz"} target="__blank" className="text-main-grey text-xl hover:text-main-blue-hover duration-500">Docs</Link>
           </li>
-          <Link href="" className=" md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
+          <Link href="" className="md:hidden block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
         </ul>
-        <Link href="" className=" hidden md:block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
+        <Link href="" className="hidden md:block bg-main-blue hover:bg-main-blue-hover duration-500 px-6 py-2 mx-4 rounded-xl text-xl  text-white shadow ">Login</Link>
       </nav>
     </div>
   );
