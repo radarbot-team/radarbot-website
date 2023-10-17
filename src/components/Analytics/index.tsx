@@ -27,8 +27,8 @@ export function Analytics() {
           color="#DC52E5"
           description="Runned Commands"
           unit="Mi"
-          value="1.2"
-          duration="3"
+          value="1"
+          duration="1"
         />
 
 
