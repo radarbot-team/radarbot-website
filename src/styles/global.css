@@ -5,6 +5,7 @@
 
 body {
   background-color: var(--background);
+  padding-top: var(--banner-height);
   overflow-x: hidden;
   min-width: 100%;
   min-height: 100%;
@@ -17,6 +18,13 @@ body {
   --feature-card-green: #33cc4c;
   --main-blue-hover: #10afba;
   --main-grey: #8e8e8e;
+  --banner-height: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --banner-height: 3.5rem;
+  }
 }
 
 @media (max-width: 1080px) {

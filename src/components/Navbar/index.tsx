@@ -67,7 +67,7 @@ export function Navbar() {
             </ScrollLink>
 
 
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
+            <Link href="https://docs.radarbot.xyz">
               <button>Docs</button>
             </Link>
 
@@ -96,7 +96,7 @@ export function Navbar() {
             </ScrollLink>
 
 
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
+            <Link href="https://docs.radarbot.xyz">
               <button>Docs</button>
             </Link>
 

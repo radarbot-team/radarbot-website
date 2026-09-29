@@ -9,7 +9,7 @@ export function ShorterNavbar() {
 
   return (
     <div className={styles.container}>
-      <Link href="/" passHref={true}>
+      <Link href="/">
         <RadarLogo className={styles.logo} />
       </Link>
 
