@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './AnalyticsInfo.module.css'
 import hexRgb from 'hex-rgb';
 import { Fade } from 'react-awesome-reveal';
-import InView, { useInView } from 'react-intersection-observer';
+import { InView, useInView } from 'react-intersection-observer';
 
 interface IColor {
   red: number;

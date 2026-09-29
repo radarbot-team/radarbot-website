@@ -3,7 +3,6 @@ import { Link as ScrollLink } from 'react-scroll';
 import Airplane from '../../../public/icons/airplane.svg';
 import ArrowDown from '../../../public/icons/arrowDown.svg';
 import styles from './MainPage.module.css';
-import Link from 'next/link';
 import { TransitionsModal } from '../TransitionsModal';
 import { useState } from 'react';
 
@@ -43,15 +42,12 @@ export function MainPage() {
       </ScrollLink>
 
       <TransitionsModal
-        title="Adding RadarBot to you server you agree with [Terms And Privacy Policy](/terms-privacy)"
-        cancelTextButton="Cancel"
-        okTextButton="Add"
+        title="RadarBot has been discontinued"
+        subTitle="RadarBot can no longer be added to Discord servers. This website is kept only as an archive. Thanks for having used RadarBot!"
+        okTextButton="Got it"
         open={open}
-        handleClose={() => setOpen((prev) => !prev)}
-        handleOkButton={() => {
-          window.open('https://bit.ly/RadarBotInvite', "_blank")
-          setOpen(false);
-        }}
+        handleClose={() => setOpen(false)}
+        handleOkButton={() => setOpen(false)}
       />
     </div>
   );

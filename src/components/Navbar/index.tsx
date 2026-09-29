@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 import RadarLogo from '../../../public/icons/radarlogo.svg';
 import styles from './Navbar.module.css';
@@ -67,11 +66,6 @@ export function Navbar() {
             </ScrollLink>
 
 
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
-              <button>Docs</button>
-            </Link>
-
-
           </nav>
         ) : (
           <nav className={styles.navbar}>
@@ -94,11 +88,6 @@ export function Navbar() {
             <ScrollLink to="support" offset={-150} smooth={true} activeClass={styles.navbaractive} spy={true}>
               Support
             </ScrollLink>
-
-
-            <Link href="https://docs.radarbot.xyz" passHref={true}>
-              <button>Docs</button>
-            </Link>
 
           </nav>
         )

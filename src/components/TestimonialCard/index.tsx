@@ -1,5 +1,5 @@
 import hexRgb from 'hex-rgb';
-import Image from 'next/dist/client/image';
+import Image, { StaticImageData } from 'next/image';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PernaDoVentoLogo from '../../../public/images/pernaDoVentoLogo.png';
@@ -54,8 +54,8 @@ export function TestimonialCard(props: {
 
         <footer>
           <div className={styles.footer}>
-            <Link href={props.link} passHref={true}>
-              <Image className={styles.footerImage} width="48px" height="47px" src={props.image} alt="pernadoventologo" />
+            <Link href={props.link}>
+              <Image className={styles.footerImage} width={48} height={47} src={props.image} alt="pernadoventologo" />
             </Link>
             <div className={styles.footerText}>
 

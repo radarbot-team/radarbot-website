@@ -1,5 +1,6 @@
 .container {
   position: fixed;
+  top: var(--banner-height);
   height: 4rem;
   width: 100vw;
   background-color: var(--background);
@@ -100,7 +101,7 @@
     z-index: 1;
     color: var(--main-grey);
     position: fixed;
-    top: 4rem;
+    top: calc(4rem + var(--banner-height));
     bottom: 0;
     left: 0;
     right: 0;
